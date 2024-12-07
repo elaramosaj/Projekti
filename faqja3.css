@@ -1,3 +1,8 @@
+:root{
+    --green: #7F9A75;
+    --pink:#F5C1C9;
+
+}
 body {
     font-family: 'Lora', serif;
     margin: 0;
@@ -16,8 +21,44 @@ header .logo {
     font-size: 24px;
     font-weight: 700;
 }
+.logo {
+    
+    left: 30px;
+    top: 30px;
+}
+.logo span{
+
+    font-size: 31px;
+    color: var(--green);
+    
+
+}
+.logo .highlight{
+    font-size: 31px;
+    color: var(--pink);
+}
+.nav-bar a.green{
+    font-size: 18px;
+    padding: 10px;
+    color: var(--green);
+    background-color: transparent;
+
+}
+.nav-bar a.pink{
+    font-size: 18px;
+    padding: 10px;
+    color: var(--pink);
+    background-color:transparent;
+}
+
+.nav-bar a.green:hover{
+    color:var(--pink);
+}
+.nav-bar a.pink:hover{
+    color: var(--green);
+}    
 header .contact-info {
-    font-size: 14px;
+    font-size: 24px;
 }
 header .search-bar {
     display: flex;
