@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stems & Petals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+     <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="nalt">
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <div class="logo">
+            <span>Stems & <span class="highlight">Petals</span></span>
+        </div>
+    
+        <nav class="nav-bar">
+            <ul>
+                <a href="home.html" class="green">Home</a>
+                <a href="flowers.html" class="pink">Flowers</a>
+                <a href="aboutus.html" class="pink">About us</a>
+                <a href="login.html" id="login-button" class="green">Log in</a>
+        </nav>
+        
+    </div> 
+   
+   <div class="container">
+        <div class="forma">
+            <h1>Login</h1>
+            <form>
+                <div class="dhenat">
+                   <div class="input-field">
+                    <input type="text" placeholder="Name">
+                   </div> 
+                   <div class="input-field">
+                    <input type="email" placeholder="Email">
+                   </div> 
+                   <div class="input-field">
+                    <input type="password" placeholder="Password">
+                   </div>
+                </div>
+            </form>
+            <button type="submit">Login</button>
+        </div>
+   </div>
+</body>
+</html>
