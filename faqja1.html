@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stems & Petals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<header>
+    <div class="logo">
+     Stems & Petals
+    </div>
+    <div class="search-bar">
+     <input placeholder="Search our store" type="text"/>
+     <button>
+      <i class="fas fa-search">
+      </i>
+     </button>
+    </div>
+    <div class="user-info">
+     <a href="#">
+      <i class="fas fa-user">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fas fa-heart">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fas fa-shopping-cart">
+      </i>$0.00</a>
+    </div>
+   </header>
+   <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Shop</a>
+    <a href="#">Flowers</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+   </nav>
+   <div class="breadcrumb">
+ 
+<body>        
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="https://i.pinimg.com/736x/ea/30/cb/ea30cbf69808df128f3c384eda64df39.jpg" style="width:100%">
+            <img class="mySlides" src="https://i.pinimg.com/736x/4d/91/fa/4d91fa7624840c17b57569ac7c64ce60.jpg" style="width:100%">
+            <img class="mySlides" src="https://i.pinimg.com/736x/d4/e1/f8/d4e1f89dd61e5ae354a6e1fb2509dff0.jpg" style="width:100%">
+            
+          
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+</body>
+</html>
