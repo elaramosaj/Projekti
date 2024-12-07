@@ -192,3 +192,36 @@ nav a {
     margin: 0 5px;
     cursor: pointer;
 }
+footer .footer-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+footer .footer-bottom {
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+}
