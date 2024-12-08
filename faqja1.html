@@ -1,120 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stems & Petals</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <link rel="stylesheet" href="faqja1.css">
+  <title>Stems & Petals</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="faqja1.css">
 </head>
-<header>
-  <div class="logo">
-    <span>Stems & <span class="highlight">Petals</span></span>
-</div>
-    <div class="search-bar">
-     <input placeholder="Search our store" type="text"/>
-     <button>
-      <i class="fas fa-search">
-      </i>
-     </button>
+<body>
+  <header>
+    <div class="logo">
+      <span>Stems & <span class="highlight">Petals</span></span>
+  </div>
+      <div class="search-bar">
+      <input placeholder="Search our store" type="text"/>
+      <button><i class="fas fa-search"></i></button>
     </div>
     <div class="user-info">
-     <a href="#">
-      <i class="fas fa-shopping-cart">
-      </i></a>
+  
+      <a href="#"><i class="fas fa-shopping-cart"></i> </a>
     </div>
-   </header>
-   <nav class="nav-bar">
+  </header>
+  <nav class="nav-bar">
     <ul>
-        <a href="faqja1.html" class="green">Home</a>
+        <a href="home.html" class="green">Home</a>
         <a href="flowers.html" class="pink">Flowers</a>
         <a href="aboutus.html" class="pink">About us</a>
         <a href="login.html" id="login-button" class="green">Log in</a>
-</nav>
-   <div class="breadcrumb">
- 
-<body>        
-        <div class="w3-content w3-display-container">
-            <img class="mySlides" src="https://i.pinimg.com/736x/ea/30/cb/ea30cbf69808df128f3c384eda64df39.jpg" style="width:100%">
-            <img class="mySlides" src="https://i.pinimg.com/736x/4d/91/fa/4d91fa7624840c17b57569ac7c64ce60.jpg" style="width:100%">
-            <img class="mySlides" src="https://i.pinimg.com/736x/d4/e1/f8/d4e1f89dd61e5ae354a6e1fb2509dff0.jpg" style="width:100%">
-            
-          
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-          </div>
-          
-          <script>
-          var slideIndex = 1;
-          showDivs(slideIndex);
-          
-          function plusDivs(n) {
-            showDivs(slideIndex += n);
-          }
-          
-          function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";  
-            }
-            x[slideIndex-1].style.display = "block";  
-          }
-          </script>
-            <footer>
-              <div class="footer-links">
-                <div>
-                  <h4>My Account</h4>
-                  <a href="#">My account</a>
-                  <a href="#">Checkout</a>
-                  <a href="#">Cart</a>
-                  <a href="#">Wishlist</a>
-                  <a href="#">Shopping Cart</a>
-                </div>
-                <div>
-                  <h4>Quick Links</h4>
-                  <a href="#">Store Location</a>
-                  <a href="#">Order Tracking</a>
-                  <a href="#">Size Guide</a>
-                  <a href="#">FAQs</a>
-                  <a href="#">Help</a>
-                </div>
-                <div>
-                  <h4>Information</h4>
-                  <a href="#">Privacy Policy</a>
-                  <a href="#">Terms &amp; Conditions</a>
-                  <a href="#">Return Policy</a>
-                  <a href="#">Shipping Policy</a>
-                  <a href="#">Contact Us</a>
-                </div>
-                <div>
-                  <h4>Company</h4>
-                  <a href="#">About Us</a>
-                  <a href="#">Careers</a>
-                  <a href="#">Press</a>
-                  <a href="#">Affiliates</a>
-                  <a href="#">Blog</a>
-                </div>
-                <div>
-                  <h4>About Our Shop</h4>
-                  <p>
-                    Whether you’re celebrating life’s special moments or adding a touch of elegance, explore our wide selection of seasonal blooms. Experience the joy of flowers, delivered with love.
-                  </p>
-                  <p>Email: stemsandpetals@company.com</p>
-                  <p>Phone: +38348704274</p>
-                  <div>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-bottom">
-                <p>Dorearta & Ela All Rights Reserved</p>
-              </div>
-            </footer>
+  </nav>
+   <section class="container">
+    <div class="slider-wrapper">
+      <div class="slider">
+      <div class="slide">
+        <img id="slide1" src="https://i.pinimg.com/736x/07/f3/af/07f3af97a648671e3a77d324dccf87ce.jpg" alt="foto1">
+        <h5>Thank you for chosing us!</h5>
+        <a href="flowers.html" class="shop-button">Shop Now</a>
+      </div>
+      <div class="slide">
+      <img id="slide2" src="https://i.pinimg.com/736x/b2/32/9d/b2329da75e07d56f4125cc424ad2a4b9.jpg" alt="foto2">
+      <h5>The best quality for your favorite person</h5>
+      <a href="flowers.html" class="shop-button">Shop Now</a>
+      </div>
+      <div class="slide">
+      <img id="slide3" src="https://i.pinimg.com/736x/ff/3d/ca/ff3dcafe21ba1a5d1d667b6b2be47885.jpg" alt="foto3">
+      <h5>Personalize your gift through us</h5>
+      <a href="flowers.html" class="shop-button">Shop Now</a>
+      </div>
+      <div class="slide">
+       <img id="slide4" src="https://i.pinimg.com/736x/d2/12/39/d2123952a0c479fc1af39d084293332e.jpg" alt="foto4">
+       <h5>We are the best</h5>
+       <a href="flowers.html" class="shop-button">Shop Now</a>
+      </div>
+    </div>
+       <div class="slider-nav">
+        <a href="#slide1"></a>
+        <a href="#slide2"></a>
+        <a href="#slide3"></a>
+        <a href="#slide4"></a>
+
+       </div>
+    </div>
+     
+   </section>
+   <script src="faqja1.js"></script>
+  </div>
+  <footer>
+    <div class="footer-links">
+      <div>
+        <h4>My Account</h4>
+        <a href="#">My account</a>
+        <a href="#">Checkout</a>
+        <a href="#">Cart</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Shopping Cart</a>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#">Store Location</a>
+        <a href="#">Order Tracking</a>
+        <a href="#">Size Guide</a>
+        <a href="#">FAQs</a>
+        <a href="#">Help</a>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Return Policy</a>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Affiliates</a>
+        <a href="#">Blog</a>
+      </div>
+      <div>
+        <h4>About Our Shop</h4>
+        <p>
+          Whether you’re celebrating life’s special moments or adding a touch of elegance, explore our wide selection of seasonal blooms. Experience the joy of flowers, delivered with love.
+        </p>
+        <p>Email: stemsandpetals@company.com</p>
+        <p>Phone: +38348704274</p>
+        <div>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Dorearta & Ela All Rights Reserved</p>
+    </div>
+  </footer>
 </body>
 </html>
