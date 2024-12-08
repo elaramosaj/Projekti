@@ -121,6 +121,9 @@ nav a {
     flex: 1;
     padding: 40px;
 }
+.details-section a{
+    text-decoration: none;
+}
 .details-section h1 {
     color: #F5C1C9;
     font-size: 24px;

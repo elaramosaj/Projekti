@@ -155,6 +155,9 @@ nav a {
 .details-section .delivery-info {
     margin-bottom: 20px;
 }
+.details-section a{
+    text-decoration: none;
+}
 .details-section .delivery-info input {
     font-family: 'Lora';
     width: 100%;

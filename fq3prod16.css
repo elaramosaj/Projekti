@@ -167,6 +167,9 @@ nav a {
 .details-section .delivery-info input[type="date"] {
     padding-right: 40px;
 }
+.details-section a{
+    text-decoration: none;
+}
 .details-section .delivery-info .calendar-icon {
     position: relative;
     display: inline-block;

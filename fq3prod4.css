@@ -178,6 +178,9 @@ nav a {
     transform: translateY(-50%);
     color: #F5C1C9;
 }
+.details-section a{
+    text-decoration: none;
+}
 .details-section .add-to-cart {
     display: flex;
     justify-content: center;
