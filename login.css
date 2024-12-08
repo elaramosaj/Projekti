@@ -1,0 +1,240 @@
+:root{
+    --green: #7F9A75;
+    --pink:#F5C1C9;
+
+}
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo {
+    
+    left: 30px;
+    top: 30px;
+}
+.logo span{
+
+    font-size: 31px;
+    color: var(--green);
+    
+
+}
+.logo .highlight{
+    font-size: 31px;
+    color: var(--pink);
+}
+.nav-bar a.green{
+    font-size: 18px;
+    padding: 10px;
+    color: var(--green);
+    background-color: transparent;
+
+}
+.nav-bar a.pink{
+    font-size: 18px;
+    padding: 10px;
+    color: var(--pink);
+    background-color:transparent;
+}
+
+.nav-bar a.green:hover{
+    color:var(--pink);
+}
+.nav-bar a.pink:hover{
+    color: var(--green);
+}
+header .contact-info {
+    font-size: 14px;
+}
+header .search-bar {
+    display: flex;
+    align-items: center;
+}
+header .search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 30px;
+}
+header .search-bar button {
+    background: none;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+header .user-info {
+    display: flex;
+    align-items: center;
+}
+header .user-info a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #F5C1C9;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color:var(--green);
+    font-weight: 500;
+}
+
+#fa-search{
+    display: block;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: var(--pink);
+  }
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--green);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+.form-group input:focus {
+    border-color: var(--green);
+    outline: none;
+    box-shadow: 0 0 4px var(--pink);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: var(--green);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+.btn:hover {
+    background-color: var(--pink);
+    color: var(--text-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--green);
+    font-size: 14px;
+}
+
+#message a {
+    text-decoration: none;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+#message a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: var(--pink);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+
+footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+footer .footer-links div {
+    margin: 10px;
+    flex: 1 1 calc(20% - 20px);
+}
+footer .footer-links h4 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+footer .footer-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+footer .footer-bottom {
+    font-size: 14px;
+}
+footer .footer-links p {
+    margin: 5px 0;
+}
+footer .footer-links div i {
+    margin-right: 10px;
+}
+footer .footer-links div a i {
+    color: #fff;
+}
+@media (max-width: 768px) {
+    footer .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .footer-links div {
+        flex: 1 1 100%;
+    }
+}
