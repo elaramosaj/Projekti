@@ -11,4 +11,4 @@ function autoSlide() {
     });
 }
 
-setInterval(autoSlide, 4000); //kohezgjatja
+setInterval(autoSlide, 3500); //kohezgjatja
