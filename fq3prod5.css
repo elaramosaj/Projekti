@@ -164,6 +164,9 @@ nav a {
     border: 1px solid ;
     border-radius: 30px;
 }
+.details-section a{
+    text-decoration: none;
+}
 .details-section .delivery-info input[type="date"] {
     padding-right: 40px;
 }

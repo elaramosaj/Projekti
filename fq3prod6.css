@@ -148,6 +148,9 @@ nav a {
     border-radius: 30px;
     cursor: pointer;
 }
+.details-section a{
+    text-decoration: none;
+}
 .details-section .size-options button.active {
     border-color: #7F9A75;
     font-weight: bold;

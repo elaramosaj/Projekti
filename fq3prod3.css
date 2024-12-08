@@ -126,6 +126,9 @@ nav a {
     font-size: 24px;
     margin-bottom: 10px;
 }
+.details-section a{
+    text-decoration: none;
+}
 .details-section .price {
     font-size: 24px;
     color: #7F9A75;

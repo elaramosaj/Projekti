@@ -135,6 +135,9 @@ nav a {
     color: #999;
     margin-right: 10px;
 }
+.details-section a{
+    text-decoration: none;
+}
 .details-section .size-options {
     margin-bottom: 20px;
 }
