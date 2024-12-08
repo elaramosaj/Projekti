@@ -1,12 +1,13 @@
-:root {
+:root{
     --green: #7F9A75;
-    --pink: #F5C1C9;
+    --pink:#F5C1C9;
+
 }
 body {
-    font-family: 'Lora', sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 header {
     display: flex;
@@ -20,27 +21,44 @@ header .logo {
     font-size: 24px;
     font-weight: 700;
 }
-.logo .highlight {
+.logo {
+    
+    left: 30px;
+    top: 30px;
+}
+.logo span{
+
+    font-size: 31px;
+    color: var(--green);
+    
+
+}
+.logo .highlight{
     font-size: 31px;
     color: var(--pink);
 }
-.nav-bar a.green {
+.nav-bar a.green{
     font-size: 18px;
     padding: 10px;
     color: var(--green);
     background-color: transparent;
+
 }
-.nav-bar a.pink {
+.nav-bar a.pink{
     font-size: 18px;
     padding: 10px;
     color: var(--pink);
-    background-color: transparent;
+    background-color:transparent;
 }
-.nav-bar a.green:hover {
-    color: var(--pink);
+
+.nav-bar a.green:hover{
+    color:var(--pink);
 }
-.nav-bar a.pink:hover {
+.nav-bar a.pink:hover{
     color: var(--green);
+}
+header .contact-info {
+    font-size: 14px;
 }
 header .search-bar {
     display: flex;
@@ -69,74 +87,109 @@ header .user-info a {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     padding: 10px 0;
 }
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: var(--green);
+    color:#7F9A75;
     font-weight: 500;
 }
+.navbar{
+    justify-content: center;
+}
 .container {
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-h1 {
-    text-align: center;
-    color: #F5C1C9;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #7F9A75;
-}
-.form-group input, .form-group select {
+    display: flex;
+    max-width: 1200px;
     width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    border: 1px solid #ccc;
+}
+.image-section img {
+    max-width: 100%;
     border-radius: 30px;
 }
-.form-group input[type="checkbox"] {
-    width: auto;
+.details-section {
+    flex: 1;
+    padding: 40px;
 }
-.form-group input:focus {
-    border-color: var(--green);
-    outline: none;
-    box-shadow: 0 0 4px var(--pink);
+.details-section h1 {
+    color: #F5C1C9;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
-.btn {
-    font-family: 'Lora', sans-serif;
-    display: inline-block;
-    background-color: var(--green);
-    color: #fff;
+.details-section .price {
+    font-size: 24px;
+    color: #7F9A75;
+    margin-bottom: 20px;
+}
+.details-section .price del {
+    color: #999;
+    margin-right: 10px;
+}
+.details-section .size-options {
+    margin-bottom: 20px;
+}
+.details-section .size-options button {
     padding: 10px 20px;
-    border: none;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-family: 'Lora';
+    color: #7F9A75;
     border-radius: 30px;
     cursor: pointer;
-    text-align: center;
-    font-size: 16px;
 }
-.btn:hover {
-    background-color: var(--pink);
-    transition: background-color 0.3s ease, color 0.3s ease;
+.details-section .size-options button.active {
+    border-color: #7F9A75;
+    font-weight: bold;
 }
-.order-summary {
-    margin-top: 30px;
+.details-section .delivery-info {
+    margin-bottom: 20px;
 }
-.order-summary ul {
-    list-style: none;
-    padding: 0;
+.details-section .delivery-info input {
+    font-family: 'Lora';
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #7F9A75;
+    border: 1px solid ;
+    border-radius: 30px;
 }
-.order-summary ul li {
+.details-section .delivery-info input[type="date"] {
+    padding-right: 40px;
+}
+.details-section .delivery-info .calendar-icon {
+    position: relative;
+    display: inline-block;
+}
+.details-section .delivery-info .calendar-icon i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #F5C1C9;
+}
+.details-section .add-to-cart {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 15px;
+    background-color: #7F9A75;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
 }
 footer {
     background-color: #F5C1C9;
@@ -187,36 +240,4 @@ footer .footer-links div a i {
     footer .footer-links div {
         flex: 1 1 100%;
     }
-}
-.order-confirmation {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    z-index: 1000;
-}
-.order-confirmation h2 {
-    color: var(--green);
-}
-.order-confirmation p {
-    color: #333;
-}
-.order-confirmation .btn {
-    margin-top: 20px;
-}
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
 }
