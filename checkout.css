@@ -1,12 +1,13 @@
-:root {
+:root{
     --green: #7F9A75;
-    --pink: #F5C1C9;
+    --pink:#F5C1C9;
+
 }
 body {
-    font-family: 'Lora', sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 header {
     display: flex;
@@ -20,27 +21,44 @@ header .logo {
     font-size: 24px;
     font-weight: 700;
 }
-.logo .highlight {
+.logo {
+    
+    left: 30px;
+    top: 30px;
+}
+.logo span{
+
+    font-size: 31px;
+    color: var(--green);
+    
+
+}
+.logo .highlight{
     font-size: 31px;
     color: var(--pink);
 }
-.nav-bar a.green {
+.nav-bar a.green{
     font-size: 18px;
     padding: 10px;
     color: var(--green);
     background-color: transparent;
+
 }
-.nav-bar a.pink {
+.nav-bar a.pink{
     font-size: 18px;
     padding: 10px;
     color: var(--pink);
-    background-color: transparent;
+    background-color:transparent;
 }
-.nav-bar a.green:hover {
-    color: var(--pink);
+
+.nav-bar a.green:hover{
+    color:var(--pink);
 }
-.nav-bar a.pink:hover {
+.nav-bar a.pink:hover{
     color: var(--green);
+}    
+header .contact-info {
+    font-size: 24px;
 }
 header .search-bar {
     display: flex;
@@ -69,14 +87,17 @@ header .user-info a {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     padding: 10px 0;
 }
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: var(--green);
+    color:#7F9A75;
     font-weight: 500;
+}
+.navbar{
+    justify-content: center;
 }
 .container {
     max-width: 800px;
