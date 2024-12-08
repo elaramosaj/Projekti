@@ -12,23 +12,29 @@
 </head>
 <body>
     <header>
-        <div class="logo">Stems & Petals</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search our store">
-            <button><i class="fas fa-search"></i></button>
-        </div>
-        <div class="user-info">
-            <a href="#"><i class="fas fa-user"></i></a>
-            <a href="#"><i class="fas fa-heart"></i></a>
-        </div>
-    </header>
-    <nav>
-        <div class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Flowers</a>
-            <a href="#">Contact us</a>
-        </div>
+        <div class="logo">
+          <span>Stems & <span class="highlight">Petals</span></span>
+      </div>
+       <div class="search-bar">
+        <input placeholder="Search our store" type="text"/>
+        <button>
+            <i class="fas fa-search">
+            </i>
+           </button>
+       </div>
+       <div class="user-info">   
+        <a href="cart.html">
+         <i class="fas fa-shopping-cart">
+         </i></a>
+       </div>
+      </header>
+      <nav class="nav-bar">
+        <ul>
+            <a href="faqja1.html" class="green">Home</a>
+            <a href="flowers.html" class="pink">Flowers</a>
+            <a href="aboutus.html" class="pink">About us</a>
+            <a href="login.html" id="login-button" class="green">Log in</a>
+    </nav>
     </nav>
     <div class="container">
         <h1>Checkout</h1>
@@ -38,7 +44,7 @@
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label for="email">Email Address</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">

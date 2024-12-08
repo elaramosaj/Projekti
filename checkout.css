@@ -1,4 +1,8 @@
+:root{
+    --green: #7F9A75;
+    --pink:#F5C1C9;
 
+}
 body {
     font-family: 'Lora', sans-serif;
     background-color: #f8f9fa;
@@ -17,6 +21,49 @@ header .logo {
     font-size: 24px;
     font-weight: 700;
 }
+.logo {
+    
+    left: 30px;
+    top: 30px;
+}
+.logo span{
+
+    font-size: 31px;
+    color: var(--green);
+    
+
+}
+.logo .highlight{
+    font-size: 31px;
+    color: var(--pink);
+}
+.nav-bar a.green{
+    font-size: 18px;
+    padding: 10px;
+    color: var(--green);
+    background-color: transparent;
+
+}
+.nav-bar a.pink{
+    font-size: 18px;
+    padding: 10px;
+    color: var(--pink);
+    background-color:transparent;
+}
+
+.nav-bar a.green:hover{
+    color:var(--pink);
+}
+.nav-bar a.pink:hover{
+    color: var(--green);
+}
+header .contact-info {
+    font-size: 14px;
+}
+header .search-bar {
+    display: flex;
+    align-items: center;
+}
 header .search-bar input {
     padding: 5px 10px;
     border: 1px solid #eaeaea;
@@ -28,6 +75,10 @@ header .search-bar button {
     margin-left: 5px;
     cursor: pointer;
 }
+header .user-info {
+    display: flex;
+    align-items: center;
+}
 header .user-info a {
     margin-left: 20px;
     text-decoration: none;
@@ -36,20 +87,25 @@ header .user-info a {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     padding: 10px 0;
 }
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #7F9A75;
+    color:var(--green);
     font-weight: 500;
+}
+
+#fa-search{
+    display: block;
 }
 .container {
     max-width: 800px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
+    border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 h1 {
@@ -70,25 +126,29 @@ h1 {
 .form-group input[type="checkbox"] {
     width: auto;
 }
-.form-group .checkbox-label {
+.form-group input:focus {
+    border-color: var(--green);
+    outline: none;
+    box-shadow: 0 0 4px var(--pink);
+  }
+  
+  .btn {
+    font-family: 'Lora', sans-serif;
     display: inline-block;
-    margin-left: 5px;
-    color: #555;
-}
-.btn {
-    font-family: 'Lora';
-    display: inline-block;
-    background-color: #7F9A75;
+    background-color: var(--green);
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     text-align: center;
-}
-.btn:hover {
-    background-color: #7F9A75;
-}
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: var(--pink);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }  
 .order-summary {
     margin-top: 30px;
 }
