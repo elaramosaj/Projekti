@@ -159,8 +159,12 @@ h1 {
 
 .btn:hover {
     background-color: var(--pink);
-    color: var(--text-dark);
+    color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+.container a{
+    text-decoration: none;
+    color: #fff;
 }
 
 #message {
