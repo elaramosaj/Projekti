@@ -82,7 +82,7 @@ header .user-info {
 header .user-info a {
     margin-left: 20px;
     text-decoration: none;
-    color: #F5C1C9;
+    color: var(--pink);
 }
 nav {
     display: flex;
@@ -93,7 +93,7 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color:#7F9A75;
+    color:var(--green);
     font-weight: 500;
 }
 .navbar{
@@ -109,12 +109,12 @@ nav a {
 }
 h1 {
     text-align: center;
-    color: #F5C1C9;
+    color: var(--pink);
 }
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #7F9A75;
+    color: var(--green);
 }
 .form-group input, .form-group select {
     width: 100%;
@@ -160,7 +160,7 @@ h1 {
     border-bottom: 1px solid #ccc;
 }
 footer {
-    background-color: #F5C1C9;
+    background-color: var(--pink);
     color: #fff;
     padding: 20px;
     text-align: center;
