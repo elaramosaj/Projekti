@@ -1,3 +1,15 @@
+<?php
+include 'databaza.php';
+session_start();
+
+if (isset($_SESSION['user_id'])) {
+    $isLoggedIn = true;
+    $userEmail = $_SESSION['user_email'];
+} else {
+    $isLoggedIn = false;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +48,7 @@
 
     <div class="container">
       <h1>Log in</h1>
-      <form id="loginForm">
+      <form action="login.php" method="POST">
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="Enter your email" required>

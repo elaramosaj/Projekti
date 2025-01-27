@@ -1,5 +1,5 @@
 <?php
-include 'databaza.php'
+include 'databaza.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssss", $username, $email, $hashed_password, $role);
 
     if ($stmt->execute()) {
-        header("Location: success.php");
+        header("Location: login.php");
         exit;
     } else {
         echo "Error: " . $stmt->error;
@@ -70,7 +70,7 @@ $conn->close();
     </nav>
     <div class="container">
       <h1>Register</h1>
-      <form action="flowers.php" method="get">
+      <form action="register.php" method="POST">
         <div class="form-group">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" placeholder="Enter your username" required>
