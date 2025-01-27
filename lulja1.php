@@ -14,36 +14,32 @@
       <span>Stems & <span class="highlight">Petals</span></span>
   </div>
       <div class="search-bar">
-       <input placeholder="Search our store" type="text"/>
-       <button>
-        <i class="fas fa-search">
-        </i>
-       </button>
-      </div>
-      <div class="user-info">
-       <a href="#">
-        <i class="fas fa-shopping-cart">
-        </i></a>
-      </div>
-     </header>
-     <nav class="nav-bar">
-      <ul>
-          <a href="faqja1.html" class="green">Home</a>
-          <a href="flowers.html" class="pink">Flowers</a>
-          <a href="aboutus.html" class="pink">About us</a>
-          <a href="login.html" id="login-button" class="green">Log in</a>
+      <input placeholder="Search our store" type="text"/>
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="user-info">
+  
+      <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
+    </div>
+  </header>
+  <nav class="nav-bar">
+    <ul>
+        <a href="faqja1.php" class="green">Home</a>
+        <a href="flowers.php" class="pink">Flowers</a>
+        <a href="faqja1.php" class="pink">About us</a>
+        <a href="login.php" id="login-button" class="green">Log in</a>
   </nav>
   <div class="container">
     <div class="image-section">
-      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://bayfreshflowers.ca/wp-content/uploads/2019/01/black-box-1.jpg" width="500"/>
+      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://flowerbazaardubai.com/wp-content/uploads/2020/05/CF-BD-29_copy.jpg" width="500"/>
     </div>
     <div class="details-section">
-      <h1>Luna</h1>
-      <div class="price"><del>$66</del> $31</div>
+      <h1>Pink Roses</h1>
+      <div class="price"> $45</div>
       <div class="size-options">
-        <button>Small $31</button>
+        <button>Small $45</button>
         <button class="active">Medium $58</button>
-        <button>Large $73</button>
+        <button>Large $67</button>
       </div>
       <div class="delivery-info">
         <label for="zip-code">Where would you like to send this item?</label>
@@ -54,7 +50,7 @@
           <i class="fas fa-calendar-alt"></i>
         </div>
       </div>
-      <a href="cart.html"><div class="add-to-cart">ADD TO CART - $31</div></a>
+      <a href="cart.php"><div class="add-to-cart">ADD TO CART - $45</div></a>
     </div>
   </div>
   <footer>
@@ -107,7 +103,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Dorearta & Ela All Rights Reserved @</p>
+      <p>Dorearta & Ela All Rights Reserved</p>
     </div>
   </footer>
 </body>

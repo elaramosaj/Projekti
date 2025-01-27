@@ -21,29 +21,29 @@
        </button>
       </div>
       <div class="user-info">
-       <a href="#">
-        <i class="fas fa-shopping-cart">
-        </i></a>
-      </div>
-     </header>
-     <nav class="nav-bar">
-      <ul>
-          <a href="faqja1.html" class="green">Home</a>
-          <a href="flowers.html" class="pink">Flowers</a>
-          <a href="aboutus.html" class="pink">About us</a>
-          <a href="login.html" id="login-button" class="green">Log in</a>
-  </nav>
+        <a href="cart.php">
+         <i class="fas fa-shopping-cart">
+         </i></a>
+       </div>
+      </header>
+      <nav class="nav-bar">
+       <ul>
+           <a href="faqja1.php" class="green">Home</a>
+           <a href="flowers.php" class="pink">Flowers</a>
+           <a href="faqja1.php" class="pink">About us</a>
+           <a href="login.php" id="login-button" class="green">Log in</a>
+   </nav>
   <div class="container">
     <div class="image-section">
-      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://bucketoflove.at/wp-content/uploads/2019/05/LOVE-IN-ME_30_ELEGANT_Bucket-of-Love_preserved-roses_230-EUR.jpg" width="500"/>
+      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://ninainvalentin.si/wp-content/uploads/2022/07/Back-to-You_Bucket-of-Love_4.jpg" width="500"/>
     </div>
     <div class="details-section">
-      <h1>Love Box</h1>
-      <div class="price"> $60</div>
+      <h1>Barbie Box</h1>
+      <div class="price"> $33</div>
       <div class="size-options">
-        <button>Small $60</button>
-        <button class="active">Medium $78</button>
-        <button>Large $89</button>
+        <button>Small $33</button>
+        <button class="active">Medium $48</button>
+        <button>Large $57</button>
       </div>
       <div class="delivery-info">
         <label for="zip-code">Where would you like to send this item?</label>
@@ -54,7 +54,7 @@
           <i class="fas fa-calendar-alt"></i>
         </div>
       </div>
-      <a href="cart.html"><div class="add-to-cart">ADD TO CART - $60</div></a>
+      <a href="cart.php"><div class="add-to-cart">ADD TO CART - $33</div></a>
     </div>
   </div>
   <footer>
@@ -107,7 +107,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Dorearta & Ela All Rights Reserved @</p>
+      <p>Dorearta & Ela All Rights Reserved @ </p>
     </div>
   </footer>
 </body>

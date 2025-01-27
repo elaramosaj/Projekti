@@ -21,29 +21,29 @@
        </button>
       </div>
       <div class="user-info">
-        <a href="cart.html">
+        <a href="cart.php">
          <i class="fas fa-shopping-cart">
          </i></a>
        </div>
       </header>
       <nav class="nav-bar">
        <ul>
-           <a href="faqja1.html" class="green">Home</a>
-           <a href="flowers.html" class="pink">Flowers</a>
-           <a href="faqja1.html" class="pink">About us</a>
-           <a href="login.html" id="login-button" class="green">Log in</a>
+           <a href="faqja1.php" class="green">Home</a>
+           <a href="flowers.php" class="pink">Flowers</a>
+           <a href="faqja1.php" class="pink">About us</a>
+           <a href="login.php" id="login-button" class="green">Log in</a>
    </nav>
   <div class="container">
     <div class="image-section">
-      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://bucketoflove.eu/wp-content/uploads/2022/07/Coco-Chanel_Bucket-of-Love_4.jpg" width="500"/>
+      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://bucketoflove.eu/wp-content/uploads/2019/02/17-6.jpg" width="500"/>
     </div>
     <div class="details-section">
-      <h1>Wedding Roses</h1>
-      <div class="price"><del>$33</del> $23</div>
+      <h1>Red Roses Box</h1>
+      <div class="price"> $73</div>
       <div class="size-options">
-        <button>Small $25</button>
-        <button class="active">Medium $38</button>
-        <button>Large $47</button>
+        <button>Small $73</button>
+        <button class="active">Medium $79</button>
+        <button>Large $90</button>
       </div>
       <div class="delivery-info">
         <label for="zip-code">Where would you like to send this item?</label>
@@ -54,7 +54,7 @@
           <i class="fas fa-calendar-alt"></i>
         </div>
       </div>
-      <a href="cart.html"><div class="add-to-cart">ADD TO CART - $23</div></a>
+      <a href="cart.php"><div class="add-to-cart">ADD TO CART - $73</div></a>
     </div>
   </div>
   <footer>

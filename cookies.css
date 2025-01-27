@@ -1,3 +1,8 @@
+:root{
+    --green: #7F9A75;
+    --pink:#F5C1C9;
+
+}
 body {
     font-family: 'Lora', serif;
     margin: 0;
@@ -37,10 +42,10 @@ body {
     font-size: 16px;
 }
 .cookie-consent .accept {
-    background-color:#F5C1C9;
+    background-color:var(--pink);
     color: white;
 }
 .cookie-consent .decline {
-    background-color:#7F9A75;
+    background-color:var(--green);
     color: white;
 }

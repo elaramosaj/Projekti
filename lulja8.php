@@ -21,29 +21,29 @@
        </button>
       </div>
       <div class="user-info">
-        <a href="cart.html">
+        <a href="cart.php">
          <i class="fas fa-shopping-cart">
          </i></a>
        </div>
       </header>
       <nav class="nav-bar">
        <ul>
-           <a href="faqja1.html" class="green">Home</a>
-           <a href="flowers.html" class="pink">Flowers</a>
-           <a href="faqja1.html" class="pink">About us</a>
-           <a href="login.html" id="login-button" class="green">Log in</a>
+           <a href="faqja1.php" class="green">Home</a>
+           <a href="flowers.php" class="pink">Flowers</a>
+           <a href="faqja1.php" class="pink">About us</a>
+           <a href="login.php" id="login-button" class="green">Log in</a>
    </nav>
   <div class="container">
     <div class="image-section">
-      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://torontoblooms.ca/cdn/shop/products/DSC6619_6693b9fc-fcc6-4630-820f-0134a531c728_2000x.jpg?v=1696436205" width="500"/>
+      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://bucketoflove.eu/wp-content/uploads/2022/07/Coco-Chanel_Bucket-of-Love_4.jpg" width="500"/>
     </div>
     <div class="details-section">
-      <h1>Garden Roses</h1>
-      <div class="price"> $39</div>
+      <h1>Wedding Roses</h1>
+      <div class="price"><del>$33</del> $23</div>
       <div class="size-options">
-        <button>Small $39</button>
-        <button class="active">Medium $48</button>
-        <button>Large $57</button>
+        <button>Small $25</button>
+        <button class="active">Medium $38</button>
+        <button>Large $47</button>
       </div>
       <div class="delivery-info">
         <label for="zip-code">Where would you like to send this item?</label>
@@ -54,7 +54,7 @@
           <i class="fas fa-calendar-alt"></i>
         </div>
       </div>
-      <a href="cart.html"><div class="add-to-cart">ADD TO CART - $39</div></a>
+      <a href="cart.php"><div class="add-to-cart">ADD TO CART - $23</div></a>
     </div>
   </div>
   <footer>
@@ -107,7 +107,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Dorearta & Ela All Rights Reserved @ </p>
+      <p>Dorearta & Ela All Rights Reserved @</p>
     </div>
   </footer>
 </body>

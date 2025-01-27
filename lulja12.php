@@ -28,22 +28,22 @@
      </header>
      <nav class="nav-bar">
       <ul>
-          <a href="faqja1.html" class="green">Home</a>
-          <a href="flowers.html" class="pink">Flowers</a>
-          <a href="aboutus.html" class="pink">About us</a>
-          <a href="login.html" id="login-button" class="green">Log in</a>
+          <a href="faqja1.php" class="green">Home</a>
+          <a href="flowers.php" class="pink">Flowers</a>
+          <a href="aboutus.php" class="pink">About us</a>
+          <a href="login.php" id="login-button" class="green">Log in</a>
   </nav>
   <div class="container">
     <div class="image-section">
-      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://bucketoflove.at/wp-content/uploads/2019/05/HEART-SHAPED-PINK_small-768x768.jpg" width="500"/>
+      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://ninainvalentin.si/wp-content/uploads/2019/04/BIG-DIVA_25_GLAMOUR_Bucket-of-Love_preserved-roses_195-EUR.jpg" width="500"/>
     </div>
     <div class="details-section">
-      <h1>Soul Lover</h1>
-      <div class="price"> $83</div>
+      <h1>Black Pink</h1>
+      <div class="price"> $33</div>
       <div class="size-options">
-        <button>Small $83</button>
-        <button class="active">Medium $90</button>
-        <button>Large $150</button>
+        <button>Small $33</button>
+        <button class="active">Medium $58</button>
+        <button>Large $73</button>
       </div>
       <div class="delivery-info">
         <label for="zip-code">Where would you like to send this item?</label>
@@ -54,7 +54,7 @@
           <i class="fas fa-calendar-alt"></i>
         </div>
       </div>
-      <a href="cart.html"><div class="add-to-cart">ADD TO CART - $83</div></a>
+      <a href="cart.php"><div class="add-to-cart">ADD TO CART - $33</div></a>
     </div>
   </div>
   <footer>

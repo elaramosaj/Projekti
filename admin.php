@@ -6,7 +6,7 @@
     <title>Products</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="login.css">
   </head>
   <body>
     <header>
@@ -20,41 +20,37 @@
         </button>
       </div>
       <div class="user-info">
-        <a href="cart.html">
+        <a href="cart.php">
           <i class="fas fa-shopping-cart"></i>
         </a>
       </div>
     </header>
     <nav class="nav-bar">
       <ul>
-        <a href="faqja1.html" class="green">Home</a>
-        <a href="flowers.html" class="pink">Flowers</a>
-        <a href="faqja1.html" class="pink">About us</a>
-        <a href="login.html" id="login-button" class="green">Log in</a>
+        <a href="faqja1.php" class="green">Home</a>
+        <a href="flowers.php" class="pink">Flowers</a>
+        <a href="faqja1.php" class="pink">About us</a>
+        <a href="login.php" id="login-button" class="green">Log in</a>
       </ul>
     </nav>
+
     <div class="container">
-      <h1>Register</h1>
-      <form action="flowers.html" method="get">
-        <div class="form-group">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="Enter your username" required>
-        </div>
+      <h1>Log in</h1>
+      <form id="loginForm">
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
-        <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required 
+            pattern=".{8,}" title="Password must be at least 8 characters">
         </div>
-        <div class="form-group">
-          <label for="confirm-password">Confirm Password</label>
-          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
-        </div>
-        <button type="submit" class="btn">Register</button>
+        <button type="submit" class="btn">Login</button>
+        <p id="message">Don't have an account? <a href="register.php" style="color: var(--pink);">Register here</a>.</p>
+        <p id="message">Regular user? <a href="login.php" style="color: var(--pink);">Login here</a>.</p>
+
       </form>
     </div>
+
     <footer>
       <div class="footer-links">
         <div>
@@ -91,7 +87,9 @@
         </div>
         <div>
           <h4>About Our Shop</h4>
-          <p>Whether you’re celebrating life’s special moments or adding a touch of elegance, explore our wide selection of seasonal blooms. Experience the joy of flowers, delivered with love.</p>
+          <p>
+            Whether you’re celebrating life’s special moments or adding a touch of elegance, explore our wide selection of seasonal blooms. Experience the joy of flowers, delivered with love.
+          </p>
           <p>Email: stemsandpetals@company.com</p>
           <p>Phone: +38348704274</p>
           <div>
@@ -106,5 +104,19 @@
         <p>Dorearta & Ela All Rights Reserved</p>
       </div>
     </footer>
+
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        if (email && password) {
+          window.location.href = 'flowers.php';
+        } else {
+          alert('Please enter both email and password!');
+        }
+      });
+    </script>
   </body>
 </html>

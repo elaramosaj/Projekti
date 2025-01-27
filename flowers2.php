@@ -24,17 +24,17 @@
     </button>
    </div>
    <div class="user-info">   
-    <a href="cart.html">
+    <a href="cart.php">
      <i class="fas fa-shopping-cart">
      </i></a>
    </div>
   </header>
   <nav class="nav-bar">
     <ul>
-        <a href="faqja1.html" class="green">Home</a>
-        <a href="flowers.html" class="pink">Flowers</a>
-        <a href="faqja1.html" class="pink">About us</a>
-        <a href="login.html" id="login-button" class="green">Log in</a>
+        <a href="faqja1.php" class="green">Home</a>
+        <a href="flowers.php" class="pink">Flowers</a>
+        <a href="faqja1.php" class="pink">About us</a>
+        <a href="login.php" id="login-button" class="green">Log in</a>
 </nav>
 
 
@@ -52,84 +52,70 @@
        </i>
       </button>
      </div>
-     <div class="result-count">Showing 9 out of 16 result</div>
+     <div class="result-count">Showing 7 out of 16 result</div>
     </div>
     <div class="product-grid">
      <div class="product-card">
-      <img alt="lule" height="300" src="https://flowerbazaardubai.com/wp-content/uploads/2020/05/CF-BD-29_copy.jpg" width="225"/>
+      <img alt="lule" height="300" src="https://bucketoflove.at/wp-content/uploads/2019/05/LOVE-IN-ME_30_ELEGANT_Bucket-of-Love_preserved-roses_230-EUR.jpg" width="225"/>
       <div class="product-info">
-        <a href="lulja1.html">Pink Roses</a>
+        <a href="lulja10.php">Love Box</a>
+        <p class="price">$60</p>
+      </div>
+     </div>
+     <div class="product-card">
+      <img alt="lule" height="300" src="https://bucketoflove.at/wp-content/uploads/2019/05/DREAMCATCHER_30_ELEGANT_Bucket-of-Love_preserved-roses_185-eur.jpg" width="225"/>
+      <div class="product-info">
+        <a href="lulja11.php">Blue Love</a>
         <p class="price">$45</p>
       </div>
      </div>
      <div class="product-card">
-      <img alt="lule" height="300" src="https://cdn.fleur.hk/media/cache/09/b0/09b0328be49e4d78f37ac1fff4a589e9.jpg" width="225"/>
+      <img alt="lule" height="300" src="https://ninainvalentin.si/wp-content/uploads/2019/04/BIG-DIVA_25_GLAMOUR_Bucket-of-Love_preserved-roses_195-EUR.jpg" width="255"/>
       <div class="product-info">
-        <a href="lulja2.html">White roses</a>
-        <p class="price">$35</p>
-      </div>
-     </div>
-     <div class="product-card">
-      <img alt="lule" height="300" src="https://losangelesblooms.com/cdn/shop/products/PinkParadiseTulipbouquet3_600x.jpg?v=1705868444" width="255"/>
-      <div class="product-info">
-        <a href="lulja3.html">Tulips</a>
-        <p class="price">$30</p>
-      </div>
-     </div>
-     <div class="product-card">
-      <img alt="lule" height="300" src="https://newjerseyblooms.com/cdn/shop/products/JAN-03-22-16523-m_1_2000x.jpg?v=1644850120" width="225"/>
-      <div class="product-info">
-        <a href="lulja4.html">Red Roses</a>
-        <p class="price">$45</p>
-      </div>
-     </div>
-     <div class="product-card">
-      <img alt="lule" height="300" src="https://torontoblooms.ca/cdn/shop/products/DSC6619_6693b9fc-fcc6-4630-820f-0134a531c728_2000x.jpg?v=1696436205" width="225"/>
-      <div class="product-info">
-        <a href="lulja5.html">Garden Roses</a>
-        <p class="price">$39</p>
-      </div>
-     </div>
-     <div class="product-card">
-      <img alt="lule" height="300" src="https://hochiminh24hrsflorist.com/wp-content/uploads/2021/04/orchids.jpg" width="225"/>
-      <div class="product-info">
-        <a href="lulja6.html">Orchids</a>
-        <p class="price">$56</p>
-      </div>
-     </div>
-     <div class="product-card">
-      <img alt="lule" height="300" src="https://ninainvalentin.si/wp-content/uploads/2022/07/Back-to-You_Bucket-of-Love_4.jpg" width="225"/>
-      <div class="product-info">
-        <a href="lulja7.html">Barbie Box</a>
+        <a href="lulja12.php">Black Pink</a>
         <p class="price">$33</p>
       </div>
      </div>
      <div class="product-card">
-      <img alt="lule" height="300" src="https://bucketoflove.eu/wp-content/uploads/2022/07/Coco-Chanel_Bucket-of-Love_4.jpg" width="225"/>
+      <img alt="lule" height="300" src="https://bucketoflove.at/wp-content/uploads/2019/05/Osre%C4%8Duje%C5%A1-me_16_70-eur-768x768.jpg" width="225"/>
       <div class="product-info">
-        <a href="lulja8.html">Wedding Roses</a>
-        <p class="price">$23
-        <span class="old-price">$56</span>
-       </p>
+        <a href="lulja13.php">Princess</a>
+        <p class="price">$75</p>
       </div>
      </div>
      <div class="product-card">
-      <img alt="lule" height="300" src="https://bucketoflove.eu/wp-content/uploads/2019/02/17-6.jpg" width="225"/>
+      <img alt="lule" height="300" src="https://bucketoflove.de/wp-content/uploads/2023/09/Unchained-Melody_120.jpg" width="225"/>
       <div class="product-info">
-        <a href="lulja9.html">Red Roses Box</a>
-        <p class="price">$73</p>
+        <a href="lulja14.php">Mint</a>
+        <p class="price">$39</p>
+      </div>
+     </div>
+
+     <div class="product-card">
+      <img alt="lule" height="300" src="https://bucketoflove.at/wp-content/uploads/2019/05/HEART-SHAPED-PINK_small-768x768.jpg" width="225"/>
+      <div class="product-info">
+        <a href="lulja15.php">Soul lover</a>
+        <p class="price">$83</p>
+      </div>
+     </div>
+     <div class="product-card">
+      <img alt="lule" height="300" src="https://bayfreshflowers.ca/wp-content/uploads/2019/01/black-box-1.jpg" width="225"/>
+      <div class="product-info">
+        <a href="lulja16.php">Luna</a>
+        <p class="price">$31
+        <span class="old-price">$66</span>
+       </p>
       </div>
      </div>
     </div>
     <div class="pagination">
      <button>
-      <i class="fas fa-chevron-left">
-      </i>
-     </button>
+        <a href="flowers.php"><i class="fas fa-chevron-left"></i></a>
+    </button>
      <button>1</button>
      <button>2</button>
      <button>
-      <a href="flowers2.html"><i class="fas fa-chevron-right"></i></a>
+      <i class="fas fa-chevron-right"></i>
      </button>
     </div>
    </main>
