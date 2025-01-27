@@ -28,10 +28,10 @@
      </header>
      <nav class="nav-bar">
       <ul>
-          <a href="faqja1.html" class="green">Home</a>
-          <a href="flowers.html" class="pink">Flowers</a>
-          <a href="aboutus.html" class="pink">About us</a>
-          <a href="login.html" id="login-button" class="green">Log in</a>
+          <a href="faqja1.php" class="green">Home</a>
+          <a href="flowers.php" class="pink">Flowers</a>
+          <a href="aboutus.php" class="pink">About us</a>
+          <a href="login.php" id="login-button" class="green">Log in</a>
   </nav>
   <div class="container">
     <div class="image-section">
@@ -54,7 +54,7 @@
           <i class="fas fa-calendar-alt"></i>
         </div>
       </div>
-      <a href="cart.html"><div class="add-to-cart">ADD TO CART - $83</div></a>
+      <a href="cart.php"><div class="add-to-cart">ADD TO CART - $83</div></a>
     </div>
   </div>
   <footer>

@@ -20,17 +20,17 @@
         </button>
       </div>
       <div class="user-info">
-        <a href="cart.html">
+        <a href="cart.php">
           <i class="fas fa-shopping-cart"></i>
         </a>
       </div>
     </header>
     <nav class="nav-bar">
       <ul>
-        <a href="faqja1.html" class="green">Home</a>
-        <a href="flowers.html" class="pink">Flowers</a>
-        <a href="faqja1.html" class="pink">About us</a>
-        <a href="login.html" id="login-button" class="green">Log in</a>
+        <a href="faqja1.php" class="green">Home</a>
+        <a href="flowers.php" class="pink">Flowers</a>
+        <a href="faqja1.php" class="pink">About us</a>
+        <a href="login.php" id="login-button" class="green">Log in</a>
       </ul>
     </nav>
 
@@ -45,8 +45,8 @@
             pattern=".{8,}" title="Password must be at least 8 characters">
         </div>
         <button type="submit" class="btn">Login</button>
-        <p id="message">Don't have an account? <a href="register.html" style="color: var(--pink);">Register here</a>.</p>
-        <p id="message">Admin? <a href="admin.html" style="color: var(--pink);">Login here</a>.</p>
+        <p id="message">Don't have an account? <a href="register.php" style="color: var(--pink);">Register here</a>.</p>
+        <p id="message">Admin? <a href="admin.php" style="color: var(--pink);">Login here</a>.</p>
 
       </form>
     </div>
@@ -112,7 +112,7 @@
         const password = document.getElementById('password').value;
 
         if (email && password) {
-          window.location.href = 'flowers.html';
+          window.location.href = 'flowers.php';
         } else {
           alert('Please enter both email and password!');
         }

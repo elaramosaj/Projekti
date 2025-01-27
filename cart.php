@@ -22,17 +22,17 @@
             </button>
         </div>
         <div class="user-info">
-            <a href="cart.html">
+            <a href="cart.php">
                 <i class="fas fa-shopping-cart"></i>
             </a>
         </div>
     </header>
     <nav class="nav-bar">
         <ul>
-            <a href="faqja1.html" class="green">Home</a>
-            <a href="flowers.html" class="pink">Flowers</a>
-            <a href="faqja1.html" class="pink">About us</a>
-            <a href="login.html" id="login-button" class="green">Log in</a>
+            <a href="faqja1.php" class="green">Home</a>
+            <a href="flowers.php" class="pink">Flowers</a>
+            <a href="faqja1.php" class="pink">About us</a>
+            <a href="login.php" id="login-button" class="green">Log in</a>
         </ul>
     </nav>
     <div class="container">

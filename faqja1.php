@@ -19,15 +19,15 @@
     </div>
     <div class="user-info">
   
-      <a href="cart.html"><i class="fas fa-shopping-cart"></i> </a>
+      <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
     </div>
   </header>
   <nav class="nav-bar">  
     <ul>
-        <a href="faqja1.html" class="green">Home</a>
-        <a href="flowers.html" class="pink">Flowers</a>
-        <a href="faqja1.html" class="pink">About us</a>
-        <a href="login.html" id="login-button" class="green">Log in</a>
+        <a href="faqja1.php" class="green">Home</a>
+        <a href="flowers.php" class="pink">Flowers</a>
+        <a href="faqja1.php" class="pink">About us</a>
+        <a href="login.php" id="login-button" class="green">Log in</a>
   </nav>
    <section class="container"> 
     <div class="slider-wrapper">
@@ -35,22 +35,22 @@
       <div class="slide">
         <img id="slide1" src="https://images.alphacoders.com/711/711187.jpg" alt="foto1">
         <h5>Thank you for choosing us!</h5>
-        <a href="flowers.html" class="shop-button">Shop Now</a>
+        <a href="flowers.php" class="shop-button">Shop Now</a>
       </div>
       <div class="slide">
       <img id="slide2" src="https://c4.wallpaperflare.com/wallpaper/653/837/100/field-flowers-sunrise-dawn-wallpaper-preview.jpg" alt="foto2">
       <h5>The best quality for your favorite person</h5>
-      <a href="flowers.html" class="shop-button">Shop Now</a>
+      <a href="flowers.php" class="shop-button">Shop Now</a>
       </div>
       <div class="slide">
       <img id="slide3" src="https://img.freepik.com/premium-photo/pink-flowers-field-pink-flowers_865967-382645.jpg" alt="foto3">
       <h5>Personalize your gift through us</h5>
-      <a href="flowers.html" class="shop-button">Shop Now</a>
+      <a href="flowers.php" class="shop-button">Shop Now</a>
       </div>
       <div class="slide">
        <img id="slide4" src="https://images.alphacoders.com/771/771048.jpg" alt="foto4">
        <h5>We are the best</h5>
-       <a href="flowers.html" class="shop-button">Shop Now</a>
+       <a href="flowers.php" class="shop-button">Shop Now</a>
       </div>
     </div>
        <div class="slider-nav">
@@ -71,21 +71,21 @@
     <div class="categories">
         <div class="category">
             <img alt="Pink flower in a vase" src="https://flowerbazaardubai.com/wp-content/uploads/2020/05/CF-BD-29_copy.jpg" width="350" height="350">
-           <a href="lulja1.html"> <p>Pink Roses</p></a>
+           <a href="lulja1.php"> <p>Pink Roses</p></a>
         </div>
         <div class="category">
             <img alt="White flower in a vase" src="https://cdn.fleur.hk/media/cache/09/b0/09b0328be49e4d78f37ac1fff4a589e9.jpg" width="350" height="350">
-            <a href="lulja2.html"><p>White Roses</p>
+            <a href="lulja2.php"><p>White Roses</p>
             </a> 
          </div>
         <div class="category">
             <img alt="Pink flower bouquet" src="https://losangelesblooms.com/cdn/shop/products/PinkParadiseTulipbouquet3_600x.jpg?v=1705868444" width="350" height="350">
-            <a href="lulja3.html"><p>Tulip's</p>
+            <a href="lulja3.php"><p>Tulip's</p>
             </a>
           </div>
         <div class="category">
             <img alt="Pink flower bouquet" src="https://torontoblooms.ca/cdn/shop/products/DSC6619_6693b9fc-fcc6-4630-820f-0134a531c728_2000x.jpg?v=1696436205" width="350" height="350">
-            <a href="lulja5.html"><p>Garden Roses</p>
+            <a href="lulja5.php"><p>Garden Roses</p>
             </a>
           </div>
     </div>

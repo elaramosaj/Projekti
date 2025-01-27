@@ -21,17 +21,17 @@
        </button>
       </div>
       <div class="user-info">
-        <a href="cart.html">
+        <a href="cart.php">
          <i class="fas fa-shopping-cart">
          </i></a>
        </div>
       </header>
       <nav class="nav-bar">
        <ul>
-           <a href="faqja1.html" class="green">Home</a>
-           <a href="flowers.html" class="pink">Flowers</a>
-           <a href="faqja1.html" class="pink">About us</a>
-           <a href="login.html" id="login-button" class="green">Log in</a>
+           <a href="faqja1.php" class="green">Home</a>
+           <a href="flowers.php" class="pink">Flowers</a>
+           <a href="faqja1.php" class="pink">About us</a>
+           <a href="login.php" id="login-button" class="green">Log in</a>
    </nav>
   <div class="container">
     <div class="image-section">
@@ -54,7 +54,7 @@
           <i class="fas fa-calendar-alt"></i>
         </div>
       </div>
-      <a href="cart.html"><div class="add-to-cart">ADD TO CART - $73</div></a>
+      <a href="cart.php"><div class="add-to-cart">ADD TO CART - $73</div></a>
     </div>
   </div>
   <footer>
