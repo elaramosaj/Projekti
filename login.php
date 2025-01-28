@@ -1,9 +1,9 @@
 <?php
-include 'db_connection.php';
+include 'databaza.php'; 
 session_start();
 
 if (isset($_SESSION['username'])) {
-    header("Location: HomePage.php");
+    header("Location: faqja1.php");
     exit;
 }
 
@@ -12,18 +12,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     if (!empty($username) && !empty($password)) {
-        $stmt = $conn->prepare("SELECT password FROM users WHERE username = ?");
+        $stmt = $conn->prepare("SELECT password, role FROM users WHERE username = ?");
         $stmt->bind_param("s", $username);
         $stmt->execute();
         $stmt->store_result();
 
         if ($stmt->num_rows > 0) {
-            $stmt->bind_result($hashedPassword);
+            $stmt->bind_result($hashedPassword, $role);
             $stmt->fetch();
 
             if (password_verify($password, $hashedPassword)) {
                 $_SESSION['username'] = $username;
-                header("Location: HomePage.php");
+                $_SESSION['role'] = $role;
+                session_regenerate_id(true);
+
+                if ($role == 'admin') {
+                    header("Location: admin_dashboard.php"); 
+                } else {
+                    header("Location: faqja1.php");
+                }
                 exit;
             } else {
                 $error = "Invalid username or password.";
@@ -62,7 +69,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </header>
 
-    
     <div class="container">
         <h1>Log in</h1>
         <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
