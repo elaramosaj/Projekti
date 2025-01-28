@@ -70,7 +70,7 @@
     <p class="trending-categories">Trending Categories</p> 
     <div class="categories">
         <div class="category">
-            <img alt="Pink flower in a vase" src="https://flowerbazaardubai.com/wp-content/uploads/2020/05/CF-BD-29_copy.jpg" width="350" height="350">
+            <img alt="Pink flower in a vase" src="https://png.pngtree.com/png-clipart/20220616/original/pngtree-pink-flower-bouquet-png-image_8090839.png" width="350" height="350">
            <a href="lulja1.php"> <p>Pink Roses</p></a>
         </div>
         <div class="category">
