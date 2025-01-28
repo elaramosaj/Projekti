@@ -45,6 +45,15 @@ if (isset($_GET['logout'])) {
         <a href="aboutUs.php" class="green">About us</a>
     </ul>
   </nav>
+
+  <div class="BigButt">
+    <?php if (isset($_SESSION['username'])): ?>
+        <a href="faqja1.php?logout=true" class="LogButt">Logout</a>
+    <?php else: ?>
+        <a href="Login.php" class="LogButt">Login</a>
+    <?php endif; ?>
+  </div>
+
   <section class="container"> 
     <div class="slider-wrapper">
       <div class="slider">

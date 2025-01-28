@@ -50,6 +50,15 @@
     </a>
    </ul>
   </nav>
+
+  <div class="BigButt">
+    <?php if (isset($_SESSION['username'])): ?>
+        <a href="faqja1.php?logout=true" class="LogButt">Logout</a>
+    <?php else: ?>
+        <a href="Login.php" class="LogButt">Login</a>
+    <?php endif; ?>
+  </div>
+
   <div class="container">
    <div class="header">
     <h1>
