@@ -27,8 +27,8 @@
     </button>
    </div>
    <div class="user-info">
-    <a href="cart.html"><i class="fas fa-shopping-cart"></i> </a>
-  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Haprisa mes ikonave--> <a href="profile.html">
+    <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
+  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Haprisa mes ikonave--> <a href="profile.php">
    <i class="fas fa-user">
    </i>
   </a>
@@ -36,16 +36,16 @@
   </header>
   <nav class="nav-bar">
    <ul>
-    <a class="green" href="faqja1.html">
+    <a class="green" href="faqja1.php">
      Home
     </a>
-    <a class="pink" href="flowers.html">
+    <a class="pink" href="flowers.php">
      Flowers
     </a>
-    <a class="pink" href="aboutUs.html">
+    <a class="pink" href="aboutUs.php">
      About us
     </a>
-    <a class="green" href="login.html" id="login-button">
+    <a class="green" href="login.php" id="login-button">
      Log in
     </a>
    </ul>
