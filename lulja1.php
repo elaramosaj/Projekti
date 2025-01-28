@@ -31,7 +31,7 @@
   </nav>
   <div class="container">
     <div class="image-section">
-      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://flowerbazaardubai.com/wp-content/uploads/2020/05/CF-BD-29_copy.jpg" width="500"/>
+      <img alt="A beautiful bouquet of mixed flowers in a glass vase" height="500" src="https://png.pngtree.com/png-clipart/20220616/original/pngtree-pink-flower-bouquet-png-image_8090839.png" width="500"/>
     </div>
     <div class="details-section">
       <h1>Pink Roses</h1>

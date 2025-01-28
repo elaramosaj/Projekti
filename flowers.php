@@ -56,7 +56,7 @@
     </div>
     <div class="product-grid">
      <div class="product-card">
-      <img alt="lule" height="300" src="https://flowerbazaardubai.com/wp-content/uploads/2020/05/CF-BD-29_copy.jpg" width="225"/>
+      <img alt="lule" height="300" src="https://png.pngtree.com/png-clipart/20220616/original/pngtree-pink-flower-bouquet-png-image_8090839.png" width="225"/>
       <div class="product-info">
         <a href="lulja1.php">Pink Roses</a>
         <p class="price">$45</p>
