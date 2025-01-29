@@ -60,14 +60,9 @@ $conn->close();
         </a>
       </div>
     </header>
-    <nav class="nav-bar">
-      <ul>
-        <a href="faqja1.php" class="green">Home</a>
-        <a href="flowers.php" class="pink">Flowers</a>
-        <a href="faqja1.php" class="pink">About us</a>
-        <a href="login.php" id="login-button" class="green">Log in</a>
-      </ul>
-    </nav>
+
+    <p>Have an account already? <a href="login.php" style="color: var(--pink);">Login here</a>.</p>
+    
     <div class="container">
       <h1>Register</h1>
       <form action="register.php" method="POST">
