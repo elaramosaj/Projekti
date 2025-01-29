@@ -1,0 +1,116 @@
+:root{
+    --green: #7F9A75;
+    --pink:#F5C1C9;
+
+}
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 30px;
+    background: none;
+    margin-left: 5px;
+}
+
+header .search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+    flex: 1;
+}
+
+header .search-bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+header .user-info a {
+    color: var(--pink);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.nav-bar{
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo span {
+    font-size: 31px;
+    color: var(--green);
+}
+
+.logo .highlight {
+    font-size: 31px;
+    color: var(--pink);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-bar a.green {
+    font-size: 18px;
+    padding: 10px;
+    color: var(--green);
+    background-color: transparent;
+}
+
+.nav-bar a.pink {
+    font-size: 18px;
+    padding: 10px;
+    color: var(--pink);
+    background-color: transparent;
+}
+
+.nav-bar a.green:hover {
+    color: var(--pink);
+}
+
+.nav-bar a.pink:hover {
+    color: var(--green);
+}

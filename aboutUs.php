@@ -41,7 +41,15 @@ if (isset($_GET['logout'])) {
    </div>
    <div class="user-info">
     <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> <a href="profile.php"><i class="fas fa-user"></i></a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> 
+   <a href="profile.php"><i class="fas fa-user"></i></a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> 
+   <?php if (isset($_SESSION['username'])): ?>
+        <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
+    <?php else: ?>
+        <a href="Login.php" class="LogButton">Login</a>
+    <?php endif; ?>
+
   </div>
   </header>
   <nav class="nav-bar">
@@ -55,13 +63,6 @@ if (isset($_GET['logout'])) {
     </ul>
   </nav>
 
-  <div class="BigButt">
-    <?php if (isset($_SESSION['username'])): ?>
-        <a href="faqja1.php?logout=true" class="LogButt">Logout</a>
-    <?php else: ?>
-        <a href="Login.php" class="LogButt">Login</a>
-    <?php endif; ?>
-  </div>
 
   <div class="container">
    <div class="header">

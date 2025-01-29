@@ -87,7 +87,13 @@ $result = $conn->query($sql);
    </div>
    <div class="user-info">
     <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> <a href="profile.php"><i class="fas fa-user"></i></a>
+   <a href="profile.php"><i class="fas fa-user"></i></a>
+   <?php if (isset($_SESSION['username'])): ?>
+        <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
+    <?php else: ?>
+        <a href="Login.php" class="LogButton">Login</a>
+    <?php endif; ?>
+
   </div>
   </header>
   <nav class="nav-bar">  
@@ -101,13 +107,7 @@ $result = $conn->query($sql);
     </ul>
   </nav>
 
-  <div class="BigButton">
-    <?php if (isset($_SESSION['username'])): ?>
-        <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
-    <?php else: ?>
-        <a href="Login.php" class="LogButton">Login</a>
-    <?php endif; ?>
-  </div>
+
     <h1>Admin Dashboard</h1>
 
     <h2>Add New Product</h2>

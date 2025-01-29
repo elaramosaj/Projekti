@@ -2,8 +2,6 @@
 session_start();
 include 'databaza.php';
 
-session_start();
-
 if (isset($_GET['logout'])) {
     session_destroy();
     unset($_SESSION['username']);
@@ -42,20 +40,43 @@ $conn->close();
     <title>Profile - <?php echo htmlspecialchars($user['username']); ?></title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="profili.css">
 </head>
 <body>
-
-<header>
+  <header>
     <div class="logo">
-        <span>Stems & <span class="highlight">Petals</span></span>
+      <span>Stems & <span class="highlight">Petals</span></span>
     </div>
-
+    <div class="search-bar">
+      <input placeholder="Search our store" type="text"/>
+      <button><i class="fas fa-search"></i></button>
+    </div>
     <div class="user-info">
-        <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="profili.php"><i class="fas fa-user"></i> <?php echo htmlspecialchars($user['username']); ?></a>
-        <a href="profili.php?logout=true" class="logout-btn">Logout</a>
-    </div>
+    <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> 
+   <a href="profile.php"><i class="fas fa-user"></i></a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> 
+   <?php if (isset($_SESSION['username'])): ?>
+        <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
+    <?php else: ?>
+        <a href="Login.php" class="LogButton">Login</a>
+    <?php endif; ?>
+
+  </div>
+  </header>
+  
+  <nav class="nav-bar">  
+  <ul>
+        <a href="faqja1.php" class="green">Home</a>
+        <a href="flowers.php" class="pink">Flowers</a>
+        <a href="aboutUs.php" class="pink">About us</a>
+        <?php if ($_SESSION['role'] == 'admin'): ?>
+        <a href="admin_dashboard.php" class="green">Dashboard</a>
+        <?php endif; ?>
+    </ul>
+  </nav>
 </header>
 
 <main>

@@ -35,7 +35,15 @@ if (isset($_GET['logout'])) {
     </div>
     <div class="user-info">
     <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> <a href="profile.php"><i class="fas fa-user"></i></a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> 
+   <a href="profile.php"><i class="fas fa-user"></i></a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> 
+   <?php if (isset($_SESSION['username'])): ?>
+        <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
+    <?php else: ?>
+        <a href="Login.php" class="LogButton">Login</a>
+    <?php endif; ?>
+
   </div>
   </header>
   
@@ -49,14 +57,6 @@ if (isset($_GET['logout'])) {
         <?php endif; ?>
     </ul>
   </nav>
-
-  <div class="BigButton">
-    <?php if (isset($_SESSION['username'])): ?>
-        <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
-    <?php else: ?>
-        <a href="Login.php" class="LogButton">Login</a>
-    <?php endif; ?>
-  </div>
 
   <section class="container"> 
     <div class="slider-wrapper">
