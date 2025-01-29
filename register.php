@@ -60,8 +60,6 @@ $conn->close();
         </a>
       </div>
     </header>
-
-    <p>Have an account already? <a href="login.php" style="color: var(--pink);">Login here</a>.</p>
     
     <div class="container">
       <h1>Register</h1>
@@ -76,12 +74,15 @@ $conn->close();
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <input type="password" id="password" name="password" placeholder="Enter your password" 
+          required pattern="^[A-Z][A-Za-z0-9]{7,}$" 
+          title="Password must start with a capital letter, be at least 8 characters long, and contain at least one number.">
         </div>
         <div class="form-group">
           <label for="confirm-password">Confirm Password</label>
           <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
         </div>
+        <p>Have an account already? <a href="login.php" style="color: var(--pink);">Login here</a>.</p>
         <button type="submit" class="btn">Register</button>
       </form>
     </div>
