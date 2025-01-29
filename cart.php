@@ -44,7 +44,7 @@ if (isset($_GET['logout'])) {
                 <a href="login.php"><i class="fas fa-user"></i> Login</a>
             <?php endif;
              ?>
-             
+              
         </div>
     </header>
     <nav class="nav-bar">
