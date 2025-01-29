@@ -1,6 +1,16 @@
 <?php
 include('databaza.php');
 
+session_start();
+
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("Location: login.php");
+    exit;
+}
+
+
 if (isset($_POST['add_product'])) {
     $name = $_POST['name'];
     $price = $_POST['price'];
@@ -53,8 +63,51 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="faqja1.css">
+    <link rel="stylesheet" href="admin_dashboard.css">
+
 </head>
-<body>
+<header>
+   <div class="logo">
+    <span>
+     Stems &amp;
+     <span class="highlight">
+      Petals
+     </span>
+    </span>
+   </div>
+   <div class="search-bar">
+    <input placeholder="Search our store" type="text"/>
+    <button>
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </div>
+   <div class="user-info">
+    <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> <a href="profile.php"><i class="fas fa-user"></i></a>
+  </div>
+  </header>
+  <nav class="nav-bar">  
+  <ul>
+        <a href="faqja1.php" class="green">Home</a>
+        <a href="flowers.php" class="pink">Flowers</a>
+        <a href="aboutUs.php" class="pink">About us</a>
+        <?php if ($_SESSION['role'] == 'admin'): ?>
+        <a href="admin_dashboard.php" class="green">Dashboard</a>
+        <?php endif; ?>
+    </ul>
+  </nav>
+
+  <div class="BigButton">
+    <?php if (isset($_SESSION['username'])): ?>
+        <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
+    <?php else: ?>
+        <a href="Login.php" class="LogButton">Login</a>
+    <?php endif; ?>
+  </div>
     <h1>Admin Dashboard</h1>
 
     <h2>Add New Product</h2>
