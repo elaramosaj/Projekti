@@ -46,7 +46,7 @@ if (isset($_GET['logout'])) {
     </ul>
   </nav>
 
-  <div class="BigButton">
+  <div class="BigButtonon">
     <?php if (isset($_SESSION['username'])): ?>
         <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
     <?php else: ?>
