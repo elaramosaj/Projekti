@@ -31,6 +31,7 @@ if (isset($_GET['logout'])) {
             <button>
                 <i class="fas fa-search"></i>
             </button>
+            <div class="user-info">
         </div>
         <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
             &nbsp;&nbsp;&nbsp;&nbsp;
