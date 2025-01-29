@@ -41,27 +41,18 @@ if (isset($_GET['logout'])) {
    </div>
    <div class="user-info">
     <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
-  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Haprisa mes ikonave--> <a href="profile.php">
-   <i class="fas fa-user">
-   </i>
-  </a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> <a href="profile.php"><i class="fas fa-user"></i></a>
   </div>
   </header>
   <nav class="nav-bar">
-   <ul>
-    <a class="green" href="faqja1.php">
-     Home
-    </a>
-    <a class="pink" href="flowers.php">
-     Flowers
-    </a>
-    <a class="pink" href="aboutUs.php">
-     About us
-    </a>
-    <a class="green" href="login.php" id="login-button">
-     Log in
-    </a>
-   </ul>
+  <ul>
+        <a href="faqja1.php" class="green">Home</a>
+        <a href="flowers.php" class="pink">Flowers</a>
+        <a href="aboutUs.php" class="pink">About us</a>
+        <?php if ($_SESSION['role'] == 'admin'): ?>
+        <a href="admin_dashboard.php" class="green">Dashboard</a>
+        <?php endif; ?>
+    </ul>
   </nav>
 
   <div class="BigButt">

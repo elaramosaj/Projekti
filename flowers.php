@@ -41,23 +41,22 @@ $result = $conn->query($sql);
             </button>
         </div>
         <div class="user-info">
-            <a href="cart.php">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-        </div>
+    <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> <a href="profile.php"><i class="fas fa-user"></i></a>
+  </div>
     </header>
     <nav class="nav-bar">  
     <ul>
         <a href="faqja1.php" class="green">Home</a>
         <a href="flowers.php" class="pink">Flowers</a>
-        <a href="aboutUs.php" class="green">About us</a>
+        <a href="aboutUs.php" class="pink">About us</a>
         <?php if ($_SESSION['role'] == 'admin'): ?>
-        <a href="admin_dashboard.php" class="LogButt">Dashboard</a>
+        <a href="admin_dashboard.php" class="green">Dashboard</a>
         <?php endif; ?>
     </ul>
 </nav>
 
-<div class="BigButton">
+<div class="BigButt">
     <?php if (isset($_SESSION['username'])): ?>
         <a href="faqja1.php?logout=true" class="LogButt">Logout</a>
     <?php else: ?>

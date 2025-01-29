@@ -60,13 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="logo">
             <span>Stems & <span class="highlight">Petals</span></span>
         </div>
-        <div class="search-bar">
-            <input placeholder="Search our store" type="text">
-            <button><i class="fas fa-search"></i></button>
-        </div>
-        <div class="user-info">
-            <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
-        </div>
     </header>
 
     <div class="container">
