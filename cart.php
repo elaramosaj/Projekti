@@ -36,6 +36,7 @@ if (isset($_GET['logout'])) {
         <div class="user-info">
         <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
             &nbsp;&nbsp;&nbsp;&nbsp;
+        
             <?php 
             if (isset($_SESSION['username'])): ?>
                 <a href="profile.php"><i class="fas fa-user"></i> <?php echo $_SESSION['username']; ?></a>
@@ -43,6 +44,7 @@ if (isset($_GET['logout'])) {
             <?php else: ?> <a href="login.php"><i class="fas fa-user"></i> Login</a>  <?php endif;
              ?>
          </div>
+
     </header>
     <nav class="nav-bar">
         <ul>
