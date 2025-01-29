@@ -1,3 +1,15 @@
+<?php
+include 'databaza.php'; 
+session_start();
+
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("Location: login.php");
+    exit;
+}
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +34,22 @@
     <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> <a href="profile.php"><i class="fas fa-user"></i></a>
   </div>
+  <header>
+        <div class="logo">
+            <span>Stems & <span class="highlight">Petals</span></span>
+        </div>
+        <div class="search-bar">
+            <input placeholder="Search our store" type="text"/>
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="user-info">
+    <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> <a href="profile.php"><i class="fas fa-user"></i></a>
+  </div>
     </header>
+    <nav class="nav-bar">  
     <ul>
         <a href="faqja1.php" class="green">Home</a>
         <a href="flowers.php" class="pink">Flowers</a>
@@ -31,6 +58,17 @@
         <a href="admin_dashboard.php" class="green">Dashboard</a>
         <?php endif; ?>
     </ul>
+</nav>
+
+<div class="BigButt">
+    <?php if (isset($_SESSION['username'])): ?>
+        <a href="faqja1.php?logout=true" class="LogButt">Logout</a>
+    <?php else: ?>
+        <a href="Login.php" class="LogButt">Login</a>
+    <?php endif; ?>
+  </div>
+
+
     <div class="container">
         <div class="menu-item">
             <span>PURCHASES</span>

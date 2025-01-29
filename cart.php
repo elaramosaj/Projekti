@@ -55,6 +55,41 @@ if (isset($_GET['logout'])) {
             <a href="login.php" id="login-button" class="green">Log in</a>
         </ul>
     </nav>
+
+<header>
+    <div class="logo">
+      <span>Stems & <span class="highlight">Petals</span></span>
+    </div>
+    <div class="search-bar">
+      <input placeholder="Search our store" type="text"/>
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="user-info">
+    <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> <a href="profile.php"><i class="fas fa-user"></i></a>
+  </div>
+  </header>
+  
+  <nav class="nav-bar">  
+  <ul>
+        <a href="faqja1.php" class="green">Home</a>
+        <a href="flowers.php" class="pink">Flowers</a>
+        <a href="aboutUs.php" class="pink">About us</a>
+        <?php if ($_SESSION['role'] == 'admin'): ?>
+        <a href="admin_dashboard.php" class="green">Dashboard</a>
+        <?php endif; ?>
+    </ul>
+  </nav>
+
+  <div class="BigButton">
+    <?php if (isset($_SESSION['username'])): ?>
+        <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
+    <?php else: ?>
+        <a href="Login.php" class="LogButton">Login</a>
+    <?php endif; ?>
+  </div>
+
+
     <div class="container">
         <h1>Checkout</h1>
         <form id="checkout-form">
