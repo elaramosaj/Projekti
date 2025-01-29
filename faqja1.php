@@ -46,11 +46,11 @@ if (isset($_GET['logout'])) {
     </ul>
   </nav>
 
-  <div class="BigButt">
+  <div class="BigButton">
     <?php if (isset($_SESSION['username'])): ?>
-        <a href="faqja1.php?logout=true" class="LogButt">Logout</a>
+        <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
     <?php else: ?>
-        <a href="Login.php" class="LogButt">Login</a>
+        <a href="Login.php" class="LogButton">Login</a>
     <?php endif; ?>
   </div>
 
