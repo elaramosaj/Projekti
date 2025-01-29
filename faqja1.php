@@ -114,7 +114,7 @@ if (isset($_GET['logout'])) {
   </div>
 
   <div class="about">
-    <h2>About Us</h2>
+    <h2>Welcome</h2>
     <img alt="A beautiful bouquet of mixed flowers in vibrant colors" src="https://fyf.tac-cdn.net/images/products/large/FYF-120.jpg?auto=webp&quality=60&width=690" width="400" height="400">
     <p>Welcome to Stems & Petals, your number one source for all things flowers. We're dedicated to providing you the very best of floral arrangements, customer service, and uniqueness.</p>
     <p>Founded in 2020 by Dorearta & Ela, Stems & Petals has come a long way from its beginnings in a small garage. When Dorearta & Ela first started out, their passion for eco-friendly and locally sourced flowers drove them to start their own business.</p>
