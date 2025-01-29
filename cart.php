@@ -1,3 +1,14 @@
+<?php
+include 'databaza.php'; 
+session_start();
+
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("Location: login.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,10 +32,16 @@
                 <i class="fas fa-search"></i>
             </button>
         </div>
-        <div class="user-info">
-            <a href="cart.php">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
+        <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <?php 
+            if (isset($_SESSION['username'])): ?>
+                <a href="profile.php"><i class="fas fa-user"></i> <?php echo $_SESSION['username']; ?></a>
+                <a href="cart.php?logout=true" class="logout-btn">Logout</a>
+            <?php else: ?>
+                <a href="login.php"><i class="fas fa-user"></i> Login</a>
+            <?php endif;
+             ?>
         </div>
     </header>
     <nav class="nav-bar">
