@@ -37,7 +37,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - <?php echo htmlspecialchars($user['username']); ?></title>
+    <title>profili - <?php echo htmlspecialchars($user['username']); ?></title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
@@ -56,7 +56,7 @@ $conn->close();
     <div class="user-info">
     <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> 
-   <a href="profile.php"><i class="fas fa-user"></i></a>
+   <a href="profili.php"><i class="fas fa-user"></i></a>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Hapsira mes ikonave--> 
    <?php if (isset($_SESSION['username'])): ?>
         <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
@@ -80,7 +80,7 @@ $conn->close();
 </header>
 
 <main>
-    <div class="profile-container">
+    <div class="profili-container">
         <h1>Welcome, <?php echo htmlspecialchars($user['username']); ?></h1>
         <p><strong>Email:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
         <p><strong>Username:</strong> <?php echo htmlspecialchars($user['username']); ?></p>

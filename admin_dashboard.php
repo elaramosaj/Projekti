@@ -87,7 +87,7 @@ $result = $conn->query($sql);
    </div>
    <div class="user-info">
     <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
-   <a href="profile.php"><i class="fas fa-user"></i></a>
+   <a href="profili.php"><i class="fas fa-user"></i></a>
    <?php if (isset($_SESSION['username'])): ?>
         <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
     <?php else: ?>
