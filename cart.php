@@ -31,19 +31,18 @@ if (isset($_GET['logout'])) {
             <button>
                 <i class="fas fa-search"></i>
             </button>
-            <div class="user-info">
         </div>
+
+        <div class="user-info">
         <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <?php 
             if (isset($_SESSION['username'])): ?>
                 <a href="profile.php"><i class="fas fa-user"></i> <?php echo $_SESSION['username']; ?></a>
                 <a href="cart.php?logout=true" class="logout-btn">Logout</a>
-            <?php else: ?>
-                <a href="login.php"><i class="fas fa-user"></i> Login</a>
-            <?php endif;
+            <?php else: ?> <a href="login.php"><i class="fas fa-user"></i> Login</a>  <?php endif;
              ?>
-        </div>
+         </div>
     </header>
     <nav class="nav-bar">
         <ul>
