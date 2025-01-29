@@ -51,7 +51,7 @@
    </ul>
   </nav>
 
-  <div class="BigButton">
+  <div class="BigButt">
     <?php if (isset($_SESSION['username'])): ?>
         <a href="faqja1.php?logout=true" class="LogButt">Logout</a>
     <?php else: ?>
