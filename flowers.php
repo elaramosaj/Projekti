@@ -42,9 +42,7 @@ $result = $conn->query($sql);
         </div>
         <div class="user-info">
     <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
-   <!--Hapsira mes ikonave--> 
    <a href="profile.php"><i class="fas fa-user"></i></a>
-  <!--Hapsira mes ikonave--> 
    <?php if (isset($_SESSION['username'])): ?>
         <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
     <?php else: ?>
