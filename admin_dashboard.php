@@ -98,7 +98,7 @@ $result = $conn->query($sql);
   </header>
   <nav class="nav-bar">  
   <ul>
-        <a href="faqja1.php" class="green">Home</a>
+        <a href="faqja1.php" class="pink">Home</a>
         <a href="flowers.php" class="pink">Flowers</a>
         <a href="aboutUs.php" class="pink">About us</a>
         <?php if ($_SESSION['role'] == 'admin'): ?>

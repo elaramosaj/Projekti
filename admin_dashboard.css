@@ -99,3 +99,84 @@ nav a {
 .navbar{
     justify-content: center;
 }
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+.form-container button {
+    background-color: var(--green);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: var(--pink);
+}
+.table-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #eaeaea;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: var(--green);
+    color: #fff;
+}
+td img {
+    max-width: 100px;
+}
+.action-buttons form {
+    display: inline;
+}
+.action-buttons button {
+    background-color: var(--green);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.action-buttons button:hover {
+    background-color: var(--pink);
+}
+.action-buttons a {
+    color: var(--pink);
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid var(--pink);
+    border-radius: 5px;
+}
+.action-buttons a:hover {
+    background-color: var(--pink);
+    color: #fff;
+}
