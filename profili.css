@@ -1,14 +1,15 @@
-:root{
+:root {
     --green: #7F9A75;
-    --pink:#F5C1C9;
-
+    --pink: #F5C1C9;
 }
+
 body {
     font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -22,7 +23,6 @@ header .logo {
     font-size: 24px;
     font-weight: 700;
 }
-
 
 header .search-bar {
     display: flex;
@@ -60,7 +60,8 @@ header .user-info a {
     display: flex;
     align-items: center;
 }
-.nav-bar{
+
+.nav-bar {
     align-items: center;
 }
 
@@ -112,5 +113,35 @@ nav a {
 }
 
 .nav-bar a.pink:hover {
+    color: var(--green);
+}
+
+.profili-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.profili-container h1 {
+    text-align: center;
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.profili-container p {
+    margin-bottom: 10px;
+    color: var(--green);
+}
+
+.LogButton {
+    color: var(--pink);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.LogButton:hover {
     color: var(--green);
 }
