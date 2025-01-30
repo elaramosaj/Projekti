@@ -12,14 +12,14 @@ class UserLogin {
         $user = $this->userRepo->getUserByUsername($username);
 
         if ($user && password_verify($password, $user->getPassword())) {
-            if (session_status() === PHP_SESSION_NONE) { // ✅ Check if session is already started
+            if (session_status() === PHP_SESSION_NONE) {
                 session_start();
             }
             $_SESSION['username'] = $user->getUsername();
-            $_SESSION['role'] = $user->getRole(); // 🔴 This causes error if `getRole()` is missing
+            $_SESSION['role'] = $user->getRole(); 
             session_regenerate_id(true);
 
-            return $user->getRole(); // Returns 'admin' or 'user'
+            return $user->getRole();
         }
         return false;
     }
