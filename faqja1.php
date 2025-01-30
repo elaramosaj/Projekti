@@ -54,7 +54,9 @@ if (isset($_GET['logout'])) {
         <a href="faqja1.php" class="green">Home</a>
         <a href="flowers.php" class="pink">Flowers</a>
         <a href="aboutUs.php" class="pink">About us</a>
-        <?php if ($_SESSION['role'] == 'admin'): ?>
+<?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
+    <a href="admin_dashboard.php" class="green">Dashboard</a>
+ ?>
         <a href="admin_dashboard.php" class="green">Dashboard</a>
         <?php endif; ?>
     </ul>

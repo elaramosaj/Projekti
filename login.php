@@ -1,48 +1,30 @@
 <?php
-include 'databaza.php'; 
-session_start();
+include_once 'UserLogin.php';
 
+session_start();
 if (isset($_SESSION['username'])) {
     header("Location: faqja1.php");
     exit;
 }
 
+$error = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = trim($_POST['username']);
     $password = $_POST['password'];
 
     if (!empty($username) && !empty($password)) {
-        $stmt = $conn->prepare("SELECT password, role FROM users WHERE username = ?");
-        $stmt->bind_param("s", $username);
-        $stmt->execute();
-        $stmt->store_result();
+        $login = new UserLogin();
+        $role = $login->authenticate($username, $password);
 
-        if ($stmt->num_rows > 0) {
-            $stmt->bind_result($hashedPassword, $role);
-            $stmt->fetch();
-
-            if (password_verify($password, $hashedPassword)) {
-                $_SESSION['username'] = $username;
-                $_SESSION['role'] = $role;
-                session_regenerate_id(true);
-
-                if ($role == 'admin') {
-                    header("Location: admin_dashboard.php"); 
-                } else {
-                    header("Location: faqja1.php");
-                }
-                exit;
-            } else {
-                $error = "Invalid username or password.";
-            }
+        if ($role) {
+            header("Location: " . ($role == 'admin' ? "admin_dashboard.php" : "faqja1.php"));
+            exit();
         } else {
             $error = "Invalid username or password.";
         }
-        $stmt->close();
     } else {
         $error = "Please fill in both fields.";
     }
-    $conn->close();
 }
 ?>
 

@@ -1,19 +1,25 @@
 <?php
 class Database {
-    private $host = 'localhost';
-    private $dbname = 'web_projekt';
-    private $username = 'root';
-    private $password = ''; 
+    private static $instance = null;
     private $conn;
 
-    public function __construct() {
-        try {
-            $this->conn = new PDO("mysql:host={$this->host};dbname={$this->dbname}", $this->username, 
-            $this->password);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (PDOException $e) {
-            die("Connection failed: " . $e->getMessage());
+    private $host = "localhost";
+    private $user = "root";
+    private $pass = "";
+    private $dbname = "web_projekt";
+
+    private function __construct() {
+        $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->dbname);
+        if ($this->conn->connect_error) {
+            die("Database Connection Failed: " . $this->conn->connect_error);
         }
+    }
+
+    public static function getInstance() {
+        if (self::$instance == null) {
+            self::$instance = new Database();
+        }
+        return self::$instance;
     }
 
     public function getConnection() {
