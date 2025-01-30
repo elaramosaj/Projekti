@@ -1,37 +1,38 @@
 <?php
-include 'databaza.php';
-
+include_once 'UserRepository.php';
+include_once 'User.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = trim($_POST['username']);
-    $email = trim($_POST['email']);
-    $password = trim($_POST['password']);
-    $confirm_password = trim($_POST['confirm-password']);
-    $role = 'user';
-
-    if ($password !== $confirm_password) {
-        echo "Passwords do not match!";
-        exit;
-    }
-
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-    $sql = "INSERT INTO users (username, email, password, role) VALUES (?, ?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssss", $username, $email, $hashed_password, $role);
-
-    if ($stmt->execute()) {
-        header("Location: login.php");
-        exit;
+    if (empty($_POST['email']) || empty($_POST['password']) || empty($_POST['username']) || empty($_POST['confirm-password'])) {
+        echo "<script>alert('Fill all fields!');</script>";
     } else {
-        echo "Error: " . $stmt->error;
+        $email = trim($_POST['email']);
+        $password = trim($_POST['password']);
+        $confirmPassword = trim($_POST['confirm-password']);
+        $username = trim($_POST['username']);
+
+        if ($password !== $confirmPassword) {
+            echo "<script>alert('Passwords do not match!');</script>";
+        } else {
+            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+            $user = new User(null, $email, $hashedPassword, $username);
+
+            $userRepository = new UserRepository();
+            if ($userRepository->insertUser($user)) {
+                echo "<script>
+                        alert('Registration successful!');
+                        window.location.href='login.php';
+                      </script>";
+                exit();
+            } else {
+                echo "<script>alert('Error during registration. Try again!');</script>";
+            }
+        }
     }
-
-    $stmt->close();
 }
-
-$conn->close();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
