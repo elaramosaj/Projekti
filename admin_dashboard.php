@@ -70,22 +70,16 @@ $result = $conn->query($sql);
 
 </head>
 <header>
-   <div class="logo">
-    <span>
-     Stems &amp;
-     <span class="highlight">
-      Petals
-     </span>
-    </span>
-   </div>
-   <div class="search-bar">
-    <input placeholder="Search our store" type="text"/>
-    <button>
-     <i class="fas fa-search">
-     </i>
-    </button>
-   </div>
-   <div class="user-info">
+        <div class="logo">
+            <span>Stems & <span class="highlight">Petals</span></span>
+        </div>
+        <div class="search-bar">
+            <input placeholder="Search our store" type="text"/>
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="user-info">
     <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
    <a href="profili.php"><i class="fas fa-user"></i></a>
    <?php if (isset($_SESSION['username'])): ?>
@@ -95,18 +89,17 @@ $result = $conn->query($sql);
     <?php endif; ?>
 
   </div>
-  </header>
-  <nav class="nav-bar">  
-  <ul>
+    </header>
+    <nav class="nav-bar">  
+    <ul>
         <a href="faqja1.php" class="pink">Home</a>
-        <a href="flowers.php" class="pink">Flowers</a>
+        <a href="flowers.php" class="green">Flowers</a>
         <a href="aboutUs.php" class="pink">About us</a>
         <?php if ($_SESSION['role'] == 'admin'): ?>
         <a href="admin_dashboard.php" class="green">Dashboard</a>
         <?php endif; ?>
     </ul>
-  </nav>
-
+</nav>
 
     <h1>Admin Dashboard</h1>
     <div class="container">
