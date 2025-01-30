@@ -109,20 +109,22 @@ $result = $conn->query($sql);
 
 
     <h1>Admin Dashboard</h1>
-
+    <div class="container">
     <h2>Add New Product</h2>
-    <form method="POST">
+
+         <form method="POST">
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <input class="inputbar" type="text" id="name" name="name" required><br><br>
         
         <label for="price">Price:</label><br>
-        <input type="number" id="price" name="price" step="0.01" required><br><br>
+        <input class="inputbar" type="number" id="price" name="price" step="0.01" required><br><br>
 
         <label for="image_url">Image URL:</label><br>
-        <input type="text" id="image_url" name="image_url" required><br><br>
+        <input class="inputbar" type="text" id="image_url" name="image_url" required><br><br>
 
         <button type="submit" name="add_product">Add Product</button>
     </form>
+    </div>
 
     <h2>Product List</h2>
     <table border="1">
@@ -145,7 +147,6 @@ $result = $conn->query($sql);
                             <td>" . $row['price'] . "</td>
                             <td><img src='" . $row['image_url'] . "' width='100'></td>
                             <td>
-                                <!-- Update Form -->
                                 <form method='POST' style='display:inline;'>
                                     <input type='hidden' name='id' value='" . $row['id'] . "'>
                                     <input type='text' name='name' value='" . $row['name'] . "' required>
@@ -154,7 +155,6 @@ $result = $conn->query($sql);
                                     <button type='submit' name='update_product'>Update</button>
                                 </form>
                                 
-                                <!-- Delete Link -->
                                 <a href='admin_dashboard.php?delete_id=" . $row['id'] . "' onclick='return confirm(\"Are you sure you want to delete?\")'>Delete</a>
                             </td>
                         </tr>";
