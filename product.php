@@ -24,7 +24,6 @@ class Product {
         
         return $stmt->execute();
     }
-
     public function deleteProduct($id) {
         $query = "DELETE FROM {$this->table_name} WHERE id = :id";
         $stmt = $this->conn->prepare($query);

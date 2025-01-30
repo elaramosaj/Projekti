@@ -14,13 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($password !== $confirmPassword) {
             echo "<script>alert('Passwords do not match!');</script>";
         } else {
-            // Hash the password
             $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-            // Create User object
             $user = new User(null, $email, $hashedPassword, $username);
 
-            // Use UserRepository to insert the user
             $userRepository = new UserRepository();
             if ($userRepository->insertUser($user)) {
                 echo "<script>

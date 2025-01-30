@@ -28,6 +28,7 @@ $productRepo = new ProductRepository($db);
 $products = $productRepo->getAllProducts();
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
