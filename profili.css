@@ -147,6 +147,56 @@ nav a {
     color: var(--green);
 }
 
+
+footer {
+    background-color: var(--pink);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+
+footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+footer .footer-links div {
+    margin: 10px;
+    flex: 1 1 calc(20% - 20px);
+}
+footer .footer-links h4 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+footer .footer-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+footer .footer-bottom {
+    font-size: 14px;
+}
+footer .footer-links p {
+    margin: 5px 0;
+}
+footer .footer-links div i {
+    margin-right: 10px;
+}
+footer .footer-links div a i {
+    color: #fff;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     header {
@@ -210,5 +260,14 @@ nav a {
     
     .user-info a {
         margin: 5px 0;
+    }
+}
+@media (max-width: 768px) {
+    footer .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .footer-links div {
+        flex: 1 1 100%;
     }
 }

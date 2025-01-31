@@ -83,21 +83,16 @@ $products = $productRepo->getAllProducts();
       </div>
     </div>
   </section>
-  
-  <div class="container py-16">
-    <p class="trending-categories">Trending Categories</p> 
-    <div class="categories">
-      <?php foreach ($products as $product): ?>
-        <div class="category">
-          <img alt="Flower" src="<?= htmlspecialchars($product['url']); ?>" width="350" height="350">
-          <a href="product.php?id=<?= htmlspecialchars($product['name']); ?>">
-            <p><?= htmlspecialchars($product['name']); ?> - $<?= htmlspecialchars($product['price']); ?></p>
-          </a>
-        </div>
-      <?php endforeach; ?>
-    </div>
-  </div>
-  
+  <div class="about">
+            <h2>Welcome,</h2>
+            <img alt="A beautiful bouquet of mixed flowers in vibrant colors" src="https://fyf.tac-cdn.net/images/products/large/FYF-120.jpg?auto=webp&quality=60&width=690" width="400" height="400">
+            <p>Welcome to Stems & Petals, your number one source for all things flowers. We're dedicated to providing you the very best of floral arrangements, customer service, and uniqueness.</p>
+            <p>Founded in 2020 by Dorearta & Ela, Stems & Petals has come a long way from its beginnings in a small garage. When Dorearta & Ela first started out, their passion for eco-friendly and locally sourced flowers drove them to start their own business.</p>
+            <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+            <br>
+            <p>Sincerely,</p>
+            <p>Dorearta & Ela</p>
+          </div>
   <footer>
     <div class="footer-bottom">
       <p>Dorearta & Ela All Rights Reserved</p>
