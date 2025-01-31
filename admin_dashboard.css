@@ -8,7 +8,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f9f9f9;
 }
 
 header {
@@ -18,12 +17,12 @@ header {
     padding: 10px 20px;
     background-color: #fff;
     border-bottom: 1px solid #eaeaea;
+    flex-wrap: wrap;
 }
 
 header .logo {
     font-size: 24px;
     font-weight: 700;
-    color: var(--green);
 }
 
 header .search-bar {
@@ -51,39 +50,86 @@ header .search-bar button {
     padding: 5px;
 }
 
-
 header .user-info {
     display: flex;
     align-items: center;
 }
 
 header .user-info a {
-    margin-left: 20px;
-    text-decoration: none;
     color: var(--pink);
-}
-
-header .user-info a:hover {
-    color: var(--green);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .nav-bar {
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo span {
+    font-size: 31px;
+    color: var(--green);
+}
+
+.logo .highlight {
+    font-size: 31px;
+    color: var(--pink);
+}
+
+nav {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-bar a.green {
+    font-size: 18px;
+    padding: 10px;
+    color: var(--green);
+    background-color: transparent;
+}
+
+.nav-bar a.pink {
+    font-size: 18px;
+    padding: 10px;
+    color: var(--pink);
+    background-color: transparent;
+}
+
+.nav-bar a.green:hover {
+    color: var(--pink);
+}
+
+.nav-bar a.pink:hover {
+    color: var(--green);
 }
 
 .nav-bar a {
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
     color: var(--green);
     font-weight: 500;
+    padding: 10px 15px;
+    white-space: nowrap; 
 }
 
 .nav-bar a:hover {
     color: var(--pink);
 }
+
 
 .container {
     max-width: 900px;
@@ -197,4 +243,90 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .search-bar {
+        width: 90%;
+        margin: 10px 0;
+    }
+    
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-bar a {
+        margin: 5px 0;
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .logo span {
+        font-size: 24px;
+    }
+    
+    .logo .highlight {
+        font-size: 24px;
+    }
+    
+    .search-bar {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .search-bar input {
+        width: 100%;
+        padding: 8px;
+    }
+    
+    .search-bar button {
+        width: 100%;
+        padding: 8px;
+    }
+    
+    .user-info {
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    .user-info a {
+        margin: 5px 0;
+    }
+
+    form label, input, button {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 20px auto;
+    }
 }

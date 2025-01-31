@@ -80,6 +80,19 @@ if ($user) {
       </div>
     </div>
   </section>
+
+  <main>
+        <section class="hero">
+            <div class="content">
+                <h1>Fresh Flowers</h1>
+                <p>Whether you’re celebrating life’s special moments or adding a touch of elegance, explore our wide selection of seasonal blooms. Experience the joy of flowers, delivered with love.</p>
+                <button>shop now</button>
+            </div>
+            <div class="image">
+                <img src="—Pngtree—pink rose decoration_13081230.png" alt="Pink Roses">
+            </div>
+        </section>
+    </main>
     
   <footer>
         <div class="footer-links">
