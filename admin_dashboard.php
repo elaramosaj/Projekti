@@ -10,20 +10,31 @@ if (isset($_GET['logout'])) {
     exit;
 }
 
+$added_by = $_SESSION['username'];
 
 if (isset($_POST['add_product'])) {
     $name = $_POST['name'];
     $price = $_POST['price'];
     $image_url = $_POST['image_url'];
 
-    $sql = "INSERT INTO products (name, price, image_url) 
-            VALUES ('$name', '$price', '$image_url')";
+    $sql = "INSERT INTO products (name, price, image_url, added_by) 
+            VALUES ('$name', '$price', '$image_url', '$added_by')";
     
     if ($conn->query($sql) === TRUE) {
         echo "New product added successfully.";
     } else {
         echo "Error: " . $conn->error;
     }
+}
+
+$sql = "UPDATE products 
+        SET added_by = '$added_by' 
+        WHERE added_by = 'default_user'";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Products updated successfully.";
+} else {
+    echo "Error: " . $conn->error;
 }
 
 if (isset($_POST['update_product'])) {

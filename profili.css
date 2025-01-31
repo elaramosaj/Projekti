@@ -147,7 +147,6 @@ nav a {
     color: var(--green);
 }
 
-
 footer {
     background-color: var(--pink);
     color: #fff;
@@ -197,7 +196,7 @@ footer .footer-links div a i {
     color: #fff;
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;

@@ -1,9 +1,10 @@
 <?php
-session_start();
-session_unset();
-session_destroy();
+include_once 'SessionManager.php';
 
-header ("Location: login.php");
+$session = new SessionManager();
+$session->destroy();
 
+header("Location: login.php");
 exit;
+
 ?>
