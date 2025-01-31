@@ -1,8 +1,9 @@
 <?php
 include_once 'UserLogin.php';
+include_once 'SessionManager.php';
 
-session_start();
-if (isset($_SESSION['username'])) {
+$session = new SessionManager();
+if ($session->has('username')) {
     header("Location: faqja1.php");
     exit;
 }
@@ -13,7 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     if (!empty($username) && !empty($password)) {
-        $login = new UserLogin();
+        $db = Database::getInstance()->getConnection();
+        $userRepo = new UserRepository($db);
+        $login = new UserLogin($userRepo, $session);
         $role = $login->authenticate($username, $password);
 
         if ($role) {
@@ -26,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "Please fill in both fields.";
     }
 }
+
 ?>
 
 <!DOCTYPE html>

@@ -2,7 +2,6 @@
 session_start();
 include_once 'Database.php';
 include_once 'UserRepository.php';
-include_once 'ProductRepository.php';
 
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
@@ -24,8 +23,6 @@ if ($user) {
     $_SESSION['role'] = $user->getRole();
 }
 
-$productRepo = new ProductRepository($db);
-$products = $productRepo->getAllProducts();
 ?>
 
 
@@ -83,25 +80,65 @@ $products = $productRepo->getAllProducts();
       </div>
     </div>
   </section>
-  
-  <div class="container py-16">
-    <p class="trending-categories">Trending Categories</p> 
-    <div class="categories">
-      <?php foreach ($products as $product): ?>
-        <div class="category">
-          <img alt="Flower" src="<?= htmlspecialchars($product['url']); ?>" width="350" height="350">
-          <a href="product.php?id=<?= htmlspecialchars($product['name']); ?>">
-            <p><?= htmlspecialchars($product['name']); ?> - $<?= htmlspecialchars($product['price']); ?></p>
-          </a>
-        </div>
-      <?php endforeach; ?>
-    </div>
-  </div>
-  
+    
   <footer>
-    <div class="footer-bottom">
-      <p>Dorearta & Ela All Rights Reserved</p>
-    </div>
-  </footer>
+        <div class="footer-links">
+            <div>
+                <h4>My Account</h4>
+                <a href="#">My account</a>
+                <a href="#">Checkout</a>
+                <a href="#">Cart</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Shopping Cart</a>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="#">Store Location</a>
+                <a href="#">Order Tracking</a>
+                <a href="#">Size Guide</a>
+                <a href="#">FAQs</a>
+                <a href="#">Help</a>
+            </div>
+            <div>
+                <h4>Information</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+                <a href="#">Affiliates</a>
+                <a href="#">Blog</a>
+            </div>
+            <div>
+                <h4>About Our Shop</h4>
+                <p>Whether you’re celebrating life’s special moments or adding a touch of elegance, explore our wide selection of seasonal blooms. Experience the joy of flowers, delivered with love.</p>
+                <p>Email: stemsandpetals@company.com</p>
+                <p>Phone: +38348704274</p>
+                <div>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Dorearta & Ela All Rights Reserved @</p>
+        </div>
+    </footer>
 </body>
 </html>
