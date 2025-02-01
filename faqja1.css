@@ -240,52 +240,6 @@ nav a {
 .slider-nav a:hover {
     opacity: 1;
 }
-.trending-categories {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    font-size: 41px;
-    font-weight: bold;
-    color: var(--pink);
-    padding-top: 2px;
-}
-.trending-categories h1 {
-    margin-bottom: 20px;
-}
-.categories {
-    display: flex;
-    justify-content: space-between; 
-    flex-wrap: wrap;
-    padding-top: 20px; 
-}
-
-.category {
-    position: relative;
-    text-align: center;
-    flex: 1 1 calc(33.333% - 20px); 
-    margin: 10px;
-}
-
-.category img {
-    display: block;
-    margin: 20px auto 0;
-    border-radius: 30px;
-}
-
-.category p {
-        margin-top: 10px;
-        font-size: 20px;
-        color: var(--pink);
-}
-
-.category a {
-    text-decoration: none;
-    color: var(--pink);
-    justify-content: center;
-    font-size: 30px;
-}
 .about {
     max-width: 800px;
     margin-top: 20px;
