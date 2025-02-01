@@ -1,14 +1,20 @@
-const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
+window.onload = function () {
+    console.log("DOM fully loaded. Running slider script...");
+    
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    let index = 0;
+    const intervalTime = 3000;
 
-function autoSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;//loopa
-    const scrollAmount = slider.scrollWidth / slides.length;
-    slider.scrollTo({
-        left: currentIndex * scrollAmount,
-        behavior: 'smooth'
-    });
-}
+    function nextSlide() {
+        index = (index + 1) % slides.length;
+        updateSlider();
+    }
 
-setInterval(autoSlide, 3500); //kohezgjatja
+    function updateSlider() {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+        slider.style.transition = "transform 0.5s ease-in-out";
+    }
+
+    setInterval(nextSlide, intervalTime);
+};

@@ -69,13 +69,27 @@ if ($user) {
     <div class="slider-wrapper">
       <div class="slider">
         <div class="slide">
-          <img src="https://images.alphacoders.com/711/711187.jpg" alt="foto1">
+          <img id="slide1" src="https://images.alphacoders.com/711/711187.jpg" alt="foto1">
           <h5>Thank you for choosing us!</h5>
           <a href="flowers.php" class="shop-button">Shop Now</a>
         </div>
+        <div class="slide">
+          <img id="slide2" src="https://c4.wallpaperflare.com/wallpaper/653/837/100/field-flowers-sunrise-dawn-wallpaper-preview.jpg" alt="foto2">
+          <h5>The best quality for your favorite person</h5>
+          <a href="flowers.php" class="shop-button">Shop Now</a>
+        </div>
+        <div class="slide">
+          <img id="slide3" src="https://img.freepik.com/premium-photo/pink-flowers-field-pink-flowers_865967-382645.jpg" alt="foto3">
+          <h5>Personalize your gift through us</h5>
+          <a href="flowers.php" class="shop-button">Shop Now</a>
+        </div>
+        <div class="slide">
+          <img id="slide4" src="https://images.alphacoders.com/771/771048.jpg" alt="foto4">
+          <h5>We are the best</h5>
+          <a href="flowers.php" class="shop-button">Shop Now</a>
+        </div>
       </div>
-    </div>
-  </section>
+        </section>
 
   <div class="about">
             <h2>Welcome,</h2>
