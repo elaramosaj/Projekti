@@ -84,15 +84,13 @@ $result = $conn->query($sql);
         <div class="logo">
             <span>Stems & <span class="highlight">Petals</span></span>
         </div>
-        <div class="search-bar">
-            <input placeholder="Search our store" type="text"/>
-            <button>
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
+
         <div class="user-info">
     <a href="cart.php"><i class="fas fa-shopping-cart"></i> </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    <a href="profili.php"><i class="fas fa-user"></i></a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
    <?php if (isset($_SESSION['username'])): ?>
         <a href="faqja1.php?logout=true" class="LogButton">Logout</a>
     <?php else: ?>

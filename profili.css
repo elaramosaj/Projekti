@@ -10,6 +10,7 @@ body {
     box-sizing: border-box;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -124,6 +125,8 @@ nav a {
     border: 1px solid #eaeaea;
     border-radius: 10px;
     background-color: #fff;
+    flex: 1;
+    margin-bottom: 410px;
 }
 
 .profili-container h1 {
@@ -148,6 +151,7 @@ nav a {
 }
 
 footer {
+    margin-top: auto;
     background-color: var(--pink);
     color: #fff;
     padding: 20px;
