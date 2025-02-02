@@ -1,7 +1,7 @@
 <?php
 session_start(); 
-include('databaza.php');
-
+include 'databaza.php';
+include_once'Database.php';
 if (isset($_GET['logout']) && $_GET['logout'] == 'true') {
     session_unset();
     session_destroy(); 
@@ -28,7 +28,7 @@ $result = $conn->query($sql);
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="flowers.css">
-</head>
+    </head>
 <body>
     <header>
         <div class="logo">
